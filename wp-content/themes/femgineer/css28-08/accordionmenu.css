@@ -1,0 +1,2 @@
+#accordion h3.ui-state-default { background: url(../images/accordion-open-bg.png) center right no-repeat; padding: 20px 0 20px 0; border-bottom: 1px solid #e1e1e1; clear: both; }
+#accordion h3.ui-state-active { background: url(../images/accordion-close-bg.png) center right no-repeat; padding: 20px 0 20px 0; border-bottom: 1px solid #fff; clear: both; }

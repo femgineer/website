@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'agencyfb';
+    src: url('../fonts/agencyfb.eot');
+    src: url('../fonts/agencyfb.eot') format('embedded-opentype'),
+         url('../fonts/agencyfb.woff2') format('woff2'),
+         url('../fonts/agencyfb.woff') format('woff'),
+         url('../fonts/agencyfb.ttf') format('truetype'),
+         url('../fonts/agencyfb.svg#agencyfb') format('svg');
+}
+
+
+@font-face {
+  font-family: 'NexaBold';
+  src: url('../fonts/NexaBold.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/NexaBold.woff') format('woff'), 
+   url('../fonts/NexaBold.ttf')  format('truetype'), 
+   url('../fonts/NexaBold.svg#NexaBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

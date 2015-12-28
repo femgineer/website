@@ -1,0 +1,24 @@
+.su-quote {
+  padding: 0px 0 0 30px;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.su-quote i {
+  font-size: 70px;
+  color: #f1f1f1;
+  position: absolute;
+  left: 3px;
+  top: -40px;
+}
+.su-quote-shell {
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-author {
+  text-align: right;
+  margin-top: 10px; color: #ba82e0;
+}

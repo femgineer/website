@@ -1,0 +1,912 @@
+@charset "utf-8";
+
+/*--------------media query css------------------*/	
+@media (max-width:1800px) {
+	.trans-purplebg-text .alignright{ right:10%;}
+	.lpdacordian #accordion h3 a{ font-size:30px; line-height:38px; width:40%;}
+}
+@media (max-width:1350px) {
+.privacy-img2 { right: 0; }
+.privacy-img1 { left: 0; }
+.privacy-img3 { left: 0; }
+.privacy-img4 { right: 0; }
+.about-blog1 .first img{ width:50%; margin-right:0;}
+.about-blog1 .about-left{ width:48%;}
+.about-blog1 .second img{ width:50%; margin-left:0; margin-top:0;}
+.product-blog3 ul.inspireitem li .produst-blog-img img{ margin-left:0;}
+.trans-purplebg-text .alignright{ right:0;}
+
+.lpdacordian .accordion-text{ height:148px;}
+.lpdacordian img.image_lpdq{ width:45%;}
+
+}
+
+@media (max-width:1200px) {
+	.search-bar{ bottom:-45px;}
+.main { width: 100%; padding: 0 2%; }
+.inner-main-about{ width:100%;}
+.about-blog1 .first img{margin-right: 0;}
+.about-blog1 .second img {margin-left:0;}
+.trans-blog .form-section{ max-width:100%; text-align:left}
+
+.navigation li.top-logo a { margin: 0 25px; }
+.navigation li a { padding: 39px; }
+.top-header { padding: 0; }
+.testimonials ul li { width: 30%; margin-left: 4%; }
+.testimonials { text-align: center; }
+.testimonials p { text-align: left; min-height:155px; }
+.testmlist .test-details { text-align: left; }
+.testimonials ul li { width: 27%; margin-left: 1%; }
+.test-name { width: 56%; margin-left: 3%; }
+.what-we-do-section ul li { margin-right: 15%; width: 23%; }
+.client-logo { text-align: center; }
+.client-logo ul li { margin-right: 8%; width: 13%; }
+.navbar { text-align: left; }
+.site-header .search-form { right: 0; }
+.testmlist .attachment-post-thumbnail.wp-post-image { width: 30%; }
+.page-template-products .testmlist .attachment-post-thumbnail.wp-post-image { width: 100%; }
+.topspeaking h1 { font-size: 52px; margin: 30px 0; }
+.topspeaking img { width: 38%; }
+.talking-cont-top .main-button { margin-top: 10px; }
+.watch-founder-section ul li { width: 30%; margin-right: 4%; }
+.watch-founder-section ul li p { font-size: 14px; }
+.inspire-title p { line-height: 34px; }
+.inspireteam { margin: 40px 0; }
+.inspireitem li img { width: 35%; }
+.inspire-details-right { width: 60%; }
+.upcoming-events ul li a { width: 40%; }
+.upcoming-events ul li span { width: 17%; margin-right: 3%; }
+.upcoming-events ul li p { width: 34%; }
+.upcoming-events ul li, .previousevent ul li { text-align: left; }
+.upcoming-events { text-align: center; }
+.upcoming-events { padding: 40px 0; }
+.previousevent { padding: 40px 0; text-align: center; }
+.previousevent h4 { text-align: left; }
+.speking-btm-part h2 { text-align: left; }
+.event { width: 65%; }
+.slides { width: 12%; }
+.video { width: 12%; }
+.talking-cont-top { width: 58%; }
+.talking-cont-top { text-align: left; }
+.topspeaking { text-align: center; }
+.watch-founder-section { text-align: center; }
+.watch-founder-section ul li p { text-align: left; }
+.navigation li a { padding: 40px 38px; }
+.privacy-img1, .privacy-img3 { left: 0; }
+.privacy-img2, .privacy-img4 { right: 0; }
+.topterms { z-index: 999; position: relative; }
+.topprivacy { z-index: 999; position: relative; }
+.topterms, .topprivacy { position: relative; z-index: 999; width: 100%; }
+.page-template-privacy_policy h1 { font-size: 52px; }
+.course-blog11 .instructor { width: 47%; margin-right: 5%; }
+.course-blog11 .instructor .inst-info { width: 57%; margin-left: 2%; }
+.course-blog15 hr { width: 100%; }
+.first img { width: 48%; }
+.about-left { width: 50%; }
+.second img { width: 45%; margin-top: 0; }
+.second .about-left { width: 48%; }
+.about-left h2 { margin: 20px 0; }
+.about-testimonials p { font-size: 24px; line-height: 34px; width: 85%; }
+
+.about-btm-content { padding: 55px 0; min-height: inherit; }
+.about-one h3 { margin-top: 0; }
+.about-three { width: 25%; }
+.about-one { margin-right: 50px; }
+.course-blog11 .instructor .inst-image { width: auto; }
+.page-template-press_template h2 { position: relative; z-index: 999; }
+.press-leftimage { width: 17%; }
+.press-righttext { width: 80%; margin-left: 2%; }
+.press-nav ul li { padding: 0 4% 0 0; }
+.abouttext { width: 55%; }
+.positionabout { position: relative; z-index: 999; width: 22%; }
+.press-img2, .press-img1 { width: 30%; }
+.aboutimage { width: 20%; margin-right: 1%; margin-top: -40px; }
+.press-img3 { width: 40%; top: -85px; }
+.videoarea .video-leftside { width: 48%; margin-right: 2%; }
+.download-leftside { width: 49%; }
+.download-leftside { margin-right: 0; }
+.download-rightside { width: 50%; }
+.download-leftside ul li { width: 31%; }
+.download-rightside ul li { width: 38%; }
+.press-img4 { width: 50%; }
+.video-rightside { width: 37%; }
+.contact-blog2 .contact-form input { width: 100%; }
+.contact-blog2 .contact-form { width: 31%; margin-right: 3%; }
+.product-blog3 ul li .produst-blog-img { width: 38%; }
+.product-blog3 ul li .produst-blog-img img { width: auto; }
+.testmlist .test-details img { width: auto; }
+.leftevents ul li a, .rightevents ul li a { width: 100%; }
+.product-blog4 .upcoming-events { text-align: left; }
+.product-img1 { width: 50%; }
+.product-blog2 { width: 100%; }
+.product-blog1 img.aligncenter { width: 70%; }
+.product-blog2 ul li { margin-right: 15%; width: 23%; }
+.leftevents { width: 50%; margin-right: 3%; }
+.rightevents { width: 40%; }
+.trans-top-content img { width: 30%; margin-right: 5%; }
+.trans-testimonial-list { width: 60%; }
+.trans-top-content .test-details img { width: 100%; }
+.trans-purplebg-text .alignright, .trans-blog2 .alignright, .trans-blog3 .employeeimg { right: 0; width: 18%; }
+.trans-blog3 ul li { width: 45%; margin-right: 3%; }
+.trans-blog3 ul li ul li { width: 100%; }
+.trans-blog3 ul li .content { width: 71%; }
+.trans-blog3 ul li img { margin-right: 4%; }
+.trans-blog11 ul li { width: 18%; margin-right: 10px; }
+.trans-blog11 { text-align: center; }
+.trans-img { width: 18%; }
+.trans-blog8 .leftcontent { width: 50%; }
+.trans-blog8 .rightcontent { width: 45%; }
+.trans-blog10 .starkit-right { width: 47%; }
+.trans-blog10 .starkit-left { width: 50%; }
+.trans-blog6 .leftcontent { width: 50%; }
+.trans-blog6 .rightcontent { width: 45%; }
+.page-template-transform-ideas .green-bg { height: auto; }
+.trans-testimonial-list h1 { font-size: 48px; line-height: 60px; margin-bottom: 10px }
+.trans-testimonial-list p { font-size: 18px; line-height: 24px; }
+.testimonial-list .test-name { font-size: 14px; }
+.trans-purplebg-text ul li { font-size: 18px; }
+.trans-purplebg-text h3 { font-size: 22px; }
+.trans-blog1 h3 { font-size: 30px; }
+.trans-blog1 h2 h2 { font-size: 42px; }
+.trans-blog2 h3 { font-size: 24px; }
+.trans-blog3 ul li .content ul li br { display: none; }
+.trans-blog5 p { font-size: 30px; }
+.trans-blog6 h2 { margin-bottom: 15px; }
+.trans-blog9 .colum-two { margin: 0 8%; }
+.trans-blog10 h2 { font-size: 32px; }
+.trans-blog10 .form-section { text-align: left; }
+.trans-blog10 .form-section .form-details{ width:60%;}
+.trans-blog10 .form-section input { width: 100%; }
+.trans-blog10 .button { font-size: 15px; }
+.trans-blog10 .button span { padding: 9px 10px; }
+.trans-blog8 h2 { margin-bottom: 40px; }
+.page-template-lpd-page .green-bg { height: auto; }
+.lpdacordian .accordion-text { height: 125px; }
+.lpdacordian img.image_lpdq { width: 40%; right: 0; }
+.lpdacordian #accordion h3 a { font-size: 27px; line-height: 32px; width: 55%; }
+.accordion-details { padding: 40px 0 15px; }
+.lpdacordian #accordion h3.ui-state-active .arrow-img, .lpdacordian #accordion h3.ui-state-default .arrow-img { height: 38px; width: 38px; background-size: 38%; }
+.blog-listing .blog-listing-img1 { width: 20%; }
+.blog-listing .blog-listing-img2 { width: 40%; }
+.populer_blog { width: 22%; margin-right: 4%; }
+.blog-listing-blog1 { padding: 50px 0; }
+.blog-listing-blog1 h1 a { font-size: 42px; margin-bottom: 15px; line-height: 48px; }
+.blog-listing-blog1 .entry-header { margin-bottom: 10px; position: relative; z-index: 999; }
+.populer_blog ul li a { font-size: 12px; }
+
+
+.course-top-content .testimonial-list p{ width:90%;}
+.form-details{ float:none;}
+.navigation ul{ text-align:center;}
+.top-content .form-section p{ text-align:center;}
+.top-content{ padding-top:0;}
+.product-blog3 ul.inspireitem  li .produst-blog-img img{ margin-left:0;}
+
+.inner-main{ width:100%;}
+
+.inner-main .entry-content img.alignright, .inner-main .entry-content .wp-caption.alignright{ margin-right:0;}
+.site-header .search-field{ margin:35px 0;}
+.form-section p{ text-align:center;}
+.course-blog13 ul li p{ width:57%; margin-right:5%;}
+.download-rightside{ margin-top:10px;}
+.lpdacordian #accordion .testimonial-list p { width: 56%; }
+ .lpd-blog1 .lpd-top-list{ width:100%;}
+ .faqsection #accordion a{ font-size:22px;}
+ .sliderwraper{ width:100%;}
+ .comments-area{ width:95%;}
+ .menu-footermenu-container{ margin-top:0;}
+}
+
+@media (max-width:1000px) {
+	
+	.trans-blog10 .form-section .form-details{ width:100%;}
+	.trans-top-content img{ width:27%;}
+.talking-cont-top p, .talking-cont-top strong { font-size: 16px; }
+.navigation li a { padding: 40px 38px; }
+.talking-cont-top .button { margin-right: 25px; }
+.talking-cont-top .button span { padding: 10px 30px; }
+.inspire-title h3 { font-size: 40px; margin-bottom: 10px; }
+.inspire-details-right h4 { font-size: 22px; margin-bottom: 10px; }
+.inspire-details-right p { line-height: 20px; margin-bottom: 20px; font-size: 14px; }
+.inspire-details-right .button { font-size: 16px; }
+.inspire-details-right .button span { padding: 10px; }
+.inspireteam ul li ul li { font-size: 14px; }
+.upcoming-events ul li a { margin-right: 5%; }
+.upcoming-events ul li, .previousevent ul li { font-size: 12px; }
+.event { width: 50%; margin-right: 4%; }
+.slides { width: 20%; margin-right: 5%; }
+.video { width: 20%; }
+.inspireteam ul li { float: left; }
+.inspireteam ul li ul li { float: none; }
+.button { font-size: 18px; }
+.trans-purplebg-text .main-button { margin-top: 30px; }
+.bglightpink, .bggreen { padding: 40px 0; }
+.topterms { width: 100%; z-index: 999; position: relative; }
+.topprivacy { width: 100%; z-index: 999; position: relative; }
+.page-template-privacy_policy h1 { font-size: 42px; padding: 40px 0; }
+.course-blog11 .instructor { margin-bottom: 20px; width: 100%; margin-right: 0; }
+.page-template-course p { margin-bottom: 10px; font-size: 14px; line-height: 23px; position: relative; z-index: 999; }
+.course-top-content h1 { font-size: 42px; }
+.course-top-content .testimonial-list p br { display: none; }
+.course-top-content .testimonial-list p { font-size: 20px; line-height: 34px; margin-bottom: 10px; }
+.course-top-content h3 { font-size: 22px; margin-bottom: 10px; }
+.course-top-content p { font-size: 17px; line-height: 26px; }
+.testimonial-list { margin-bottom: 25px; }
+.course-purplebg-text p { font-size: 20px; line-height: 30px; }
+.course-blog3, .course-blog6 { padding: 40px 0; }
+.page-template-course h2 { font-size: 32px; margin-bottom: 15px; }
+.course-blog3 h4 { margin: 30px 0; font-size: 22px; }
+.course-blog5 h4 { width: 100%; font-size: 22px; }
+.course-blog6 ul li { font-size: 14px; }
+.course-blog6 ul { padding: 0; }
+/*.course-blog7 .form-details { width: 100%; margin-right: 0; }*/
+/*.course-blog7 .form-section input { width: 40%; }*/
+.course-blog7 h4 { font-size: 24px; }
+
+.page-template-course h2 { font-size: 22px; }
+.course-blog10 h5 { font-size: 18px; }
+.course-blog11 .instructor .inst-info { width: 78%; }
+.course-blog12 h3 { font-size: 22px; margin: 20px 0; }
+.course-blog13 h5 { font-size: 18px; }
+.course-blog13 ul li p { width: 100%; margin-top: 10px; font-size: 14px; line-height: 22px; margin-right: 0; }
+.course-blog14 h5 { font-size: 16px; margin: 10px 0; }
+.course-blog15 h3 { font-size: 32px; }
+.course-blog15 p em { font-size: 22px; }
+.course-blog15 p span { font-size: 18px; }
+.course-blog15 p a { font-size: 20px; line-height: 26px; }
+.course-blog15 p { margin-top: 10px; }
+.course-blog14 ul li { font-size: 14px; }
+.course-blog16 h3 { font-size: 22px; }
+.faqsection #accordion a { font-size: 18px; line-height: 22px; }
+.faqsection #accordion h3.ui-state-default { padding: 15px 0; }
+.faqsection #accordion .ui-accordion-content p { font-size: 14px; }
+.course-blog16 p { margin-top: 5px; }
+.course-img, .course-img2, .course-img3, .course-img4 { width: 18%; }
+.course-blog13 { padding: 40px 0; }
+.press-nav ul li a { font-size: 16px; }
+.page-template-press_template h2 { font-size: 42px; margin-bottom: 30px; }
+.page-template-press_template h3 { font-size: 20px; margin-bottom: 10px; line-height: 20px; }
+.press-righttext p { font-size: 14px; line-height: 22px; }
+.positionabout p { font-size: 13px; }
+.page-template-press_template h4 { font-size: 30px; margin-bottom: 10px; }
+.press-blog4 { font-size: 14px; }
+.boilerplate { margin: 50px 0; }
+.press-blog5 { padding: 40px 0; }
+.press-blog2 { padding: 50px 0; }
+.page-template-press_template h2 { font-size: 33px; margin-bottom: 20px; }
+.press-blog5 ul li h5 { font-size: 20px; margin: 0 0 10px; }
+.press-blog7 { padding: 50px 0 0; }
+.press-blog5 ul li { font-size: 14px; }
+.page-template-press_template h2 { font-size: 28px; }
+.page-template-press_template h3 { font-size: 18px; line-height: 22px; }
+.press-blog6 p { font-size: 14px; line-height: 26px; }
+.video-rightside p strong { font-size: 16px; }
+.press-blog7 .button span, .video-leftside .button span { font-size: 14px; padding: 4px 20px; }
+.product-blog1 h1 { font-size: 56px; line-height: 56px; }
+
+.product-blog2 h2 { font-size: 22px; line-height: 28px; }
+.product-blog2 ul li p { font-size: 18px; }
+.product-blog2 ul li { margin-right: 10%; }
+.product-blog3 .testmlist p { font-size: 12px; line-height: 20px; }
+.product-blog3 .test-details { width: 12%; }
+.product-blog3 .test-name { margin-left: 2%; }
+.product-blog3 .testmlist { margin-top: 0; }
+.rightevents ul li a { font-size: 14px; line-height: 18px; }
+.product-blog3 ul li { margin-bottom: 80px; }
+.trans-testimonial-list h1 { font-size: 38px; line-height: 50px; }
+.testimonial-list .test-name { width: 70%; }
+.course-top-content .testimonial-list .test-name { width: auto; }
+.trans-purplebg-text ul li { font-size: 16px; }
+.trans-purplebg-text ul { padding: 0 0 20px; }
+.trans-blog .form-details { width: 40%; margin: 0; }
+.trans-blog .form-section input { width: 100%; padding: 15px; }
+.trans-blog .button span { padding: 12px 40px; }
+.trans-blog1 h2 { font-size: 36px; margin-bottom: 15px; }
+.trans-blog1 h3 { font-size: 24px; margin: 20px 0; }
+.trans-blog1 p { font-size: 14px; line-height: 24px; margin-bottom: 15px; }
+.trans-blog2 h2 { font-size: 24px; }
+.trans-blog2 h3 { font-size: 22px; }
+.trans-blog2 ul li { font-size: 14px; }
+.trans-blog3 h2 { font-size: 28px; }
+.trans-blog3 ul li .content { width: 60%; font-size: 13px; }
+.trans-blog3 ul li .content p { margin-bottom: 10px; line-height: 20px; }
+.trans-blog3 ul li .content ul li { font-size: 14px; padding: 0 12px 0 20px }
+.trans-blog5 p { font-size: 28px; line-height: 30px; }
+.trans-blog6 h3 { font-size: 22px; }
+.trans-blog6 h4 { margin: 0 0 15px; }
+.trans-blog3 ul li { margin-right: 0; width: 100%; }
+.trans-blog6 p { font-size: 14px; }
+.trans-blog8 .rightcontent ul li { font-size: 14px; }
+.trans-blog8 .leftcontent ul li { font-size: 14px; line-height: 24px; }
+.trans-blog8 .rightcontent ul li { padding: 0 0 10px 20px; }
+.trans-blog6 ul li a { font-size: 14px; }
+.trans-blog6 span { padding: 6px 40px; font-size: 18px; }
+.trans-blog9 .colum-one { width: 30% }
+.trans-blog9 .colum-two { margin: 0 3%; width: 39%; }
+.trans-blog9 .colum-two h3, .trans-blog9 .colum-three h3 { font-size: 24px; margin: 0 0 5px; }
+.trans-blog9 .button span { padding: 7px 40px; }
+.trans-blog10 h2 { font-size: 25px; }
+.trans-blog10 .form-details { width: 100%; margin-right: 0; }
+.trans-blog10 .form-details input { width: 100%; }
+.trans-blog10 .button { margin-left: 0; margin-top: 35px }
+.trans-blog10 p { font-size: 14px; margin-bottom: 15px; }
+.lpd-top-list ul li { font-size: 16px; line-height: 28px; padding: 0 0 0 20px; }
+.lpd-top-list ul li::before { line-height: 28px; font-size: 10px; }
+.lpdacordian .accordion-text { height: 82px; }
+.lpdacordian #accordion h3 a { font-size: 20px; line-height: 28px; }
+.lpdacordian #accordion .accordion-details .test-details img { width: 40%; }
+
+.lpdacordian #accordion .testimonial-list p span { width: 90%; font-size: 14px; }
+.accordion-details .test-name a { font-size: 14px; }
+.lpdacordian #accordion .accordion-details .test-details { width: 40%; }
+.accordion-details .testimonial-list .test-name { width: 50%; }
+.lpdacordian #accordion .accordion-details .testimonial-list p a { font-size: inherit; }
+
+.lpd-blog2 .form-section {
+width:100%;
+}
+.lpd-top-list { width: 100%; }
+.accordion-details ul { margin-bottom: 25px; }
+.blog-listing-blog1 h1 a { font-size: 30px; line-height: 36px; }
+.blog-filter-img { width: 28%; }
+
+.navigation li a{ padding:43px;}
+.single-format-standard .form-section .button{ margin-top:40px; display:inherit;}
+.product-blog3 ul li .produst-blog-img{ vertical-align:top;}
+.inspire-details-right{ width:57%;}
+.product-blog3 .inspire-details-right{ margin-left:25px;}
+ .course-blog13 ul li p .fa-right-quote{ right:0;}
+
+ .lpdacordian #accordion .testimonial-list p{ width:97%; margin-right:0;}
+ .lpdacordian .accordion-details .testimonial-list{ padding-left:40px;}
+/* div.error{ bottom:-42px;}*/
+/* .contact-blog2 div.error{ bottom:-25px;}*/
+ 
+/* .testmlist .test-details{ margin-top:20px;}*/
+ .about-blog1 .second img{ margin-top:20px;}
+ .blog-listing .bggreen h2 { position: relative; z-index: 999; }
+ .blog-filter-img{ left:0;}
+ .trans-purplebg-text .main-button{ margin-left:20px}
+ .comment-content p{ width:100%;}
+ .comment-metadata, .comment-content, .comment-list .reply{ width:72%;}
+ .comments-area .comment-author{ width:15%; margin-right:3%;}
+ 
+ 
+ 
+ 
+
+}
+
+@media (max-width:935px) {
+	
+	.single-format-standard .form-section input{ width:100%;}
+	
+.navigation li { text-align: center; }
+.navigation li a img { width: 75%; }
+.navigation li a { font-size: 15px;  padding: 25px 28px; }
+.navigation li.top-logo a { margin: 0 25px; }
+.navigation li a { padding: 22px; }
+.site-header .search-field { margin: 14px 0; }
+.top-header { padding:0; }
+.green-bg { background-size: 100%; background-position: 0 bottom; height: auto; }
+.top-content h1 { font-size: 55px; line-height: 70px; margin-bottom: 30px; }
+.form-section p { font-size: 22px; line-height:26px; }
+.form-details { width: 38%; margin-right: 3%; }
+.comentbox{ width:100%; margin-right:0;}
+.form-section input { width: 100%; }
+.main-button { margin-top: 40px; }
+/*.testimonials ul li { width: 29%; }*/
+.what-we-do-section ul li { margin-right: 8%; width: 27%; }
+.purple-bg { background-size: 100%; padding: 55px 0; }
+.testimonials p { font-size: 12px; line-height: 20px; }
+.test-name { font-size: 12px; line-height: 18px; }
+.footer-left { width: 50%; }
+.footer-logo { width: 25%; }
+.footer-left-text ul li { font-size: 12px; padding: 0; }
+.footer-left-text p { font-size: 12px; }
+.menu-footermenu-container ul li a { font-size: 12px; line-height: 24px; }
+.footer-right { width: auto; }
+.footer-left-text { padding: 5px 0 0 12px; }
+.screen-reader-text { font-size: 12px; }
+
+.inspireteam ul li { margin-top: 50px; }
+.speking-btm-part h2 { font-size: 38px; margin-bottom: 30px; }
+.course-blog11 .instructor .inst-info { width: 70%; }
+.course-blog14 ul { position: relative; z-index: 999; }
+.about-one h3 { font-size: 18px; line-height: 20px; margin-bottom: 10px; }
+.about-one { width: 38%; margin-right: 3%; }
+.rightevents h3, .leftevents h3 { font-size: 32px; }
+.lpd-blog1 h1 { font-size: 30px; line-height: 36px; margin-bottom: 15px; }
+.lpd-blog1 .testimonial-list p { font-size: 16px; line-height: 20px; margin-bottom: 10px; line-height:26px; }
+.course-top-content .testimonial-list p .fa-right-quote-white{ bottom:13px;}
+.lpd-blog1 .testimonial-list p .fa { font-size: 8px; vertical-align: top; }
+.lpdacordian #accordion h3.ui-state-active .arrow-img, .lpdacordian #accordion h3.ui-state-default .arrow-img { height: 30px; width: 30px; background-size: 50%; }
+.lpdacordian #accordion .accordion-details h3 { font-size: 20px; line-height: 24px; margin-bottom: 20px; }
+.accordion-details p strong { margin-top: 0; }
+.accordion-details p { font-size: 14px; }
+.lpdacordian #accordion .accordion-details p em a { font-size: inherit; }
+.lpdacordian #accordion .testimonial-list p .fa { font-size: 14px; }
+
+.lpd-blog2 .form-section p { font-size: 24px; font-weight: bold; line-height: 32px; }
+.blog-listing .bggreen { padding: 50px 0; }
+
+.testimonials ul li{ width:26%;}
+
+.fa-quote-left, .fa-quote-right{ font-size:20px;}
+ .search-bar{ right:0; bottom:-46px;}
+  .search-bar:before{ right:0;}
+  .search-bar input{ padding:12px 10px;}
+  .product-blog3 .test-name{ width:115px;}
+  .inspire-title h3{ margin-bottom:50px;}
+  .about-testimonials{ margin-top:30px;}
+/*  .about-one .course-social-icon li a{ margin-right:0;}*/
+  .about-testimonials .fa-left-quote{ left:inherit; margin-left:-45px;}
+  .about-testimonials .fa-right-quote{right:inherit; margin-left:15px;}
+  .page-template-privacy_policy h1{ font-size:38px;}
+  .trans-blog5 p br{ display:none; }
+  .trans-blog5 p {margin-left:18%;}
+  .contact-blog2 .contact-form{ width:30%; margin-right:4.4%;}
+  .faqsection #accordion a{ font-size:17px;}
+  .product-blog1 h1 br{ display:none;}
+  .trans-blog6 h2{ font-size:44px;}
+  .course-social-icon li a{ margin-right:15px;}
+  .footer-right{ margin-top:0;}
+  
+ 
+}
+
+@media (max-width:767px) {
+	.trans-blog .form-section input{ width:100%;}
+	.twofield .form-details input, .comentbox textarea{ margin-bottom:0;}
+	.comment-respond .form-submit{ margin:20px 0}
+	.comments-area h2{ margin:30px 0 10px}
+	comment-respond{ padding-top:0;}
+	.comment-form [for="author"], .comment-form [for="email"], .comment-form [for="url"], .comment-form [for="comment"]{ width:100%;}
+	.comment-respond{ padding-top:0;}
+	.trans-blog10 .button{ margin-top:10px}
+	.trans-blog .form-section{ text-align:center;}
+	
+	.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a,.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus{ background-color:transparent;}
+.top-content h1 { font-size: 42px; line-height: 50px; margin-bottom: 18px; }
+.form-section input { font-size: 14px; padding: 12px; }
+.form-section p { margin-bottom: 18px; }
+.button span { padding: 12px; }
+.testimonials ul{ padding:0;}
+.testimonials ul li { width: 80%; margin: 0 auto 30px; padding: 0; }
+.testimonials p .fa-quote-right{ right:-20px}
+.testimonials p { margin-bottom: 10px; min-height: inherit; }
+.attachment-post-thumbnail.wp-post-image { width: auto; }
+.main-button { margin-top: 55px; }
+.testimonials { padding: 55px 0 20px; }
+.what-we-do-section { padding: 40px 0; }
+.what-we-do-section h2 { margin-bottom: 30px; font-size: 28px; }
+.what-we-do-section ul li h4 { margin: 20px 0 0; }
+.what-we-do-section ul li { margin: 0; width: 100%; }
+.what-we-do-section ul li img { width: 230px; }
+.footer { text-align: center; display: inline-block; vertical-align: top; }
+.footer-left { width: 100%; margin-bottom: 10px; }
+.footer-right { width: 100%; }
+.footer-left-text p { text-align: left; }
+.site-footer { padding: 38px 0; }
+.client-logo ul li { vertical-align: middle; }
+.menu { display: none; }
+.purple-bg { padding: 25px 0; height: auto; }
+.footer .menu { display: block; }
+.footer-left-text ul li { font-size: 13px; }
+.footer-left-text p { font-size: 13px; }
+.navigation li.top-logo { display: none; }
+.navigation a.repo_nlogo { margin: 0 auto; width: 90px; padding: 0 !important; border: none; }
+.menu-topmenu-container { width: 100%; }
+.navigation  a.repo_nlogo:hover { background: none; border: none; }
+.navigation  a { width: 100%; padding: 9px 0; display: block; line-height: 15px; font-size: 12px; text-align: left; }
+.navigation li { width:100%; }
+.navigation li a{border-bottom: 1px solid #a47aac; }
+
+.navigation li:last-child { border-bottom: none; }
+/*.navigation a:hover { background: none; border: none; }*/
+.purple-bg .main-button { margin-top: 20px; }
+.navigation ul { padding: 0 5px; }
+.menu-icon { display: block; }
+.topspeaking img { width: auto; float: none; text-align: center; margin: 0; }
+.talking-cont-top { width: 100%; }
+.inspireteam ul li { text-align: center; }
+.inspireitem li img { width: 46%; }
+.inspire-details-right { width: 100%; }
+.inspireteam ul li ul li { text-align: left; }
+.upcoming-events ul li a, .event { width: 100%; margin: 0; }
+.upcoming-events ul li span { width: 100%; margin: 10px 0; }
+.upcoming-events ul li p, .video { width: 100%; }
+.slides { margin: 15px 0; width: 100%; }
+.watch-founder-section ul li { width: 100%; margin: 0; }
+.watch-founder-section ul li p { text-align: center; }
+.watch-founder-section ul li a { width: 53%; margin: 0 auto; }
+.inspire-title p { line-height: 26px; font-size: 22px; }
+.inspire-title h3 { font-size: 38px; }
+.topspeaking h1 { font-size: 36px; }
+.privacy-img1, .privacy-img3, .privacy-img2, .privacy-img4 { width: 25%; }
+.page-template-privacy_policy h1 { font-size: 32px; padding: 20px 0; line-height: 34px; }
+.topterms ol li { font-size: 18px; margin-bottom: 20px; }
+.topterms ol li p { font-size: 13px; line-height: 18px; }
+.topterms ol li ol li { font-size: 13px; line-height: 20px; margin-bottom: 10px; }
+.topprivacy, .topterms { padding: 40px 0; }
+.topprivacy p { margin-bottom: 15px; }
+.topprivacy ul li { padding: 0 0 15px 20px; font-size: 13px; line-height: 20px; }
+.topprivacy p { font-size: 13px; line-height: 20px; }
+.topterms ol li ol { padding-left: 0; }
+.course-blog11 .instructor .inst-image { display: block; text-align: center; }
+.course-blog11 .instructor .inst-info { text-align: center; width: 100%; margin-left: 0; }
+.course-blog11 .instructor .inst-image { margin-bottom: 10px; }
+.page-template-course p br { display: none; }
+.course-blog13 ul li { text-align: center; }
+.attachment-post-thumbnail.wp-post-image { margin: 10px 0; }
+.course-blog13 ul li span { width: 100%; }
+.course-blog13 h5 { text-align: center; }
+.about-left { width: 100%; }
+.first img, .second img { width: auto; margin: 0 auto; display: block; }
+.second .about-left { width: 100%; margin-top: 0; }
+.second { margin: 40px 0; }
+.about-testimonials p { font-size: 18px; line-height: 27px; }
+.about-left h2 { margin: 10px 0; }
+.about-one { width: 100%; text-align: center; margin-right: 0; }
+.about-three { width: auto; margin: 20px auto 0; display: block; position: inherit; }
+.press-blog2 ul li { margin-bottom: 28px; }
+.abouttext { width: 100%; position:relative; z-index:999; }
+.aboutimage { width: 100%; text-align: center; margin: 40px 0; }
+.positionabout { width: 100%; text-align: center; }
+.abouttext p { margin-bottom: 6px; }
+.press-blog5 ul li { width: 100%; margin: 0 0 5px; }
+.videoarea .video-leftside { margin-right: 0; width: 100%; }
+.video-rightside { display: block; margin: 0 auto; width: 60%; }
+.press-img3 { top: -50px; }
+.page-template-press_template h4 { font-size: 26px; }
+.download-leftside { width: 100%; }
+.download-rightside { display: block; float: none; width: 100%; }
+.download-area { padding-bottom: 210px; }
+.page-template-contact_us h1 { font-size: 39px; }
+.page-template-contact_us h2 { font-size: 22px; }
+.contact-blog1 { padding: 30px 0; }
+.contact-blog2 .contact-form { margin-right: 0; width: 100%; margin-bottom: 10px; }
+.contact-blog2 .contact-form-text { margin-top: 10px; }
+.contact-blog2 input[type="submit"] { float: none; font-size: 18px; padding: 12px 30px; }
+.contact-blog2 { padding: 30px 0; }
+.product-blog2 ul li { width: 100%; text-align: center; margin: 0; }
+.product-blog2 ul li p { margin: 10px 0 25px; }
+.product-blog3 ul li .produst-blog-img { width: 100%; }
+.product-blog3 .inspire-details-right { margin-top: 30px; margin-left: 0; }
+.product-blog3 .test-details img { margin: 0; }
+.leftevents { width: 100%; margin-right: 0; }
+.rightevents { margin-top: 40px; width: 100%; }
+.product-blog1 h1 { font-size: 42px; line-height: 42px; }
+.product-blog2 h2 { font-size: 18px; line-height: 26px; }
+.leftevents h3, .rightevents h3 { font-size: 28px; margin-bottom: 10px; }
+.leftevents h4 { font-size: 20px; }
+.product-blog3 .testmlist p { width: 98%; margin-right:0; }
+.product-blog2 h2 br { display: none; }
+.trans-testimonial-list h1 { font-size: 24px; line-height: 32px; }
+.trans-testimonial-list p { font-size: 16px; margin-bottom: 0; line-height: 20px; }
+.trans-top-content .test-details { width: 19%; }
+.trans-purplebg-text h2 { font-size: 26px; }
+.trans-purplebg-text ul li { font-size: 12px; padding-bottom: 5px; padding-left: 13px; }
+.trans-purplebg-text .button { margin-top: 0; }
+.trans-purplebg-text .main-button{ margin-top:20px}
+.trans-purplebg-text h3 { font-size: 18px; }
+/*.trans-blog .button span { padding: 9px 40px; }*/
+.trans-blog1 h2 { font-size: 26px; }
+.trans-blog1 h3 { font-size: 20px; }
+.trans-blog2 h3 { font-size: 18px; }
+.trans-blog2 h2 { font-size: 20px; }
+.trans-blog3 h2 { font-size: 22px; }
+.trans-blog5 p { font-size: 18px; line-height: 26px; }
+.trans-blog6 .leftcontent { width: 100%; }
+.trans-blog6 .button span { padding: 8px 40px; }
+.trans-blog6 .rightcontent { width: 100%; margin-top: 50px; }
+.rightcontent img { float: none; }
+.trans-blog7 h2 { font-size: 32px; }
+.trans-blog3 ul li .content { width: 78%; }
+.trans-blog6 h3 br { display: none; }
+.trans-blog8 h2 { font-size: 40px; }
+.trans-blog9 .colum-one img { float: none; }
+.trans-blog9 .colum-one { width: 100%; }
+.trans-blog9 .colum-two { margin: 15px 0 25px; text-align: center; width: 100%; }
+.trans-blog9 .colum-three { width: 100%; text-align: center; }
+.trans-blog9 h2 { font-size: 38px; width: 1005; text-align: center; margin-bottom: 20px; }
+.trans-blog10 .starkit-left { width: 100%; text-align: center; }
+.trans-blog10 .starkit-left h6 { text-align: left; }
+.trans-blog10 .starkit-right { margin-top: 45px; width: 100%; }
+.trans-blog10 .starkit-right h2 { margin-bottom: 0; }
+.trans-blog10 .starkit-right img { text-align: center; float: none; margin: 0; }
+.trans-blog10 p { text-align: center; margin: 0; margin-top: 20px; }
+.trans-blog, .trans-blog1, .trans-blog2, .trans-blog3, .trans-blog4, .trans-blog5, .trans-blog6, .trans-blog7, .trans-blog8, .trans-blog9, .trans-blog10, .trans-blog11, .trans-blog11 { padding: 40px 0; }
+.testmlist .attachment-post-thumbnail.wp-post-image { width: auto; }
+.page-template-lpd-page .green-bg { padding: 30px 0; }
+.lpd-blog1 h1 { font-size: 24px; line-height: 30px; }
+.lpd-blog1 h3 { font-size: 20px; }
+.lpd-top-list ul li { font-size: 14px; line-height: 24px; }
+.lpd-top-list ul li::before { line-height: 24px; font-size: 8px; }
+.lpdacordian #accordion .testimonial-list p { width: 100%; }
+.lpdacordian #accordion h3 a { font-size: 18px; line-height: 24px; vertical-align: middle; margin-left:15px;}
+.lpdacordian .accordion-text { height: 74px; }
+.accordion-details p em { font-size: 16px; }
+.lpd-blog2 .form-section p { font-size: 18px; line-height: 24px; margin-bottom:20px; }
+.populer_blog { width: 100%; margin-right: 0; }
+.populer_blog ul li { padding-bottom: 10px; }
+.populer_blog h4 { margin-bottom: 10px; }
+.blog-listing .bggreen h2 { font-size: 26px; }
+.blog-listing-blog1 .hentry { padding: 0 0 25px; }
+.blog-listing-blog1 .paging-navigation { margin-top: 20px; }
+
+div.pagination span.current { padding: 4px 6px; }
+div.pagination a { font-size: 14px; margin: 0 5px; }
+div.pagination { padding: 0 10px; }
+.blog-listing .bggreen h1 { font-size: 30px; }
+
+.previousevent ul li .video{ margin-top:10px;}
+
+.button span{ padding:7px 40px; font-size:16px;}
+.button:hover, .button:focus{ box-shadow:0 0 0 5px rgba(0,0,0,0.1);}
+.fa fa-quote-left, .fa fa-quote-right{ font-size:14px;}
+/*.course-blog15 .button span{ padding:inherit;}*/
+.course-top-content .testimonial-list p .fa-quote-left{ left:-15px;}
+
+.about-testimonials .fa-quote-left{ left:-20px;}
+.fa-quote-left, .fa-quote-right{ font-size:20px;}
+
+.fa-left-quote, .fa-right-quote{ width:15px; height:17px; background-size:100%;}
+.fa-left-quote{ left:-20px;}
+
+.about-testimonials .fa-right-quote{ right:0;}
+.fa-right-quote{ right:0; margin-right:-20px;}
+.top-header {
+  padding: 10px 0;}
+  .navigation li a:after{ display:none;}
+  .site-header .search-field{ margin:7px 0;}
+  .navigation li a{ padding:10px 0; font-size:14px;}
+  ul.nav-menu ul a, .nav-menu ul ul a{ font-size:14px;}
+  .navigation li a:hover, .navigation li.active-menu a{ background:none;}
+ 
+  .form-details div.error{ position:inherit; margin-top:5px; bottom:0;}
+  /*.contact-blog2 div.error{ position:inherit; margin-top:5px; bottom:0;}*/
+  .form-details {
+  width: 100%;
+  margin: 0 0 10px;}
+  .nav-menu .sub-menu, .nav-menu .children{ background-color:transparent; position:relative;}
+  .single-format-standard .form-section .form-details{ margin-right:0;}
+  .single-format-standard .form-section input{ width:100%;}
+  .single-format-standard .blog-listing-blog1 h3{ font-size:18px; line-height:20px;}
+  .main{ padding:0 4%;}
+  .nav-menu{ display:none;}
+    
+.nav-menu .sub-menu, .nav-menu .children{width:auto;height: auto;}
+ul.nav-menu ul a, .nav-menu ul ul a{ padding:10px 0; text-align:left; width:100%;}
+ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-menu ul ul a:focus{ background-color:transparent;}
+ .about-blog1 .about-left{ width:100%;}
+ .about-blog1 .first img{ width:100%;}
+.about-blog1 .second img { width:100%;}
+.about-one .course-social-icon li:last-child  a{ padding-right:0;}
+.page-template-about-us h1 { font-size: 42px; }
+.about-left h2 { font-size: 28px; }
+.topterms ol li strong{ margin-bottom:10px; }
+.course-blog15 p span em{ font-size:16px;}
+.press-blog2 ul li{ position:relative; z-index:999;}
+.download-leftside ul li { padding-right: 0; }
+.search-bar{ bottom:-50px;}
+.press-blog7 h4{ margin-bottom:30px;}
+.lpdacordian #accordion .accordion-details .test-details { width: 100%; }
+.lpdacordian #accordion .accordion-details .test-details img{ width:79px;}
+.product-blog3 .test-name {  width:24%; margin-top:14px; }
+.trans-blog3 ul li .content h4{ margin-top:10px;}
+.blog-listing-blog1 .nav-previous{  padding:10px 15px 10px;}
+.footer-left-text { padding: 20px 0 0 12px; }
+.faqsection #accordion a{ font-size:15px;}
+.course-blog7 .form-section input{ width:100%;}
+.course-blog7 .button{ margin-top:20px;}
+.trans-blog .form-details { width:100%; margin: 0; }
+.trans-blog .form-section input { width: 100%; padding: 15px; }
+ .trans-purplebg-text .main-button{ margin-left:20px; margin-left:0;}
+  .wpcf7-mail-sent-ok{clear:both; float:left;}
+  .trans-purplebg-text .fa{ line-height:20px;}
+  
+  .single .blog-listing-blog1 a{  text-align:center;}
+   .single .blog-listing-blog1 a img{ float:none; margin-left:0;}
+   .single .blog-listing-blog1 .entry-content p{ width:100%;}
+   .trans-blog8 .rightcontent ul li .fa{ line-height:19px;}
+}
+
+@media (max-width:585px) {
+.top-content h1 { font-size: 30px; line-height: 36px; }
+.form-section p { font-size: 16px; margin-bottom: 10px; line-height:20px; }
+/*.button { font-size: 13px; }*/
+.page-template-speaking .inspire-details-right .button span, .button span { padding: 8px; font-size:14px; }
+
+.main-button { margin-top: 20px; }
+.client-logo ul li { margin-right: 7%; }
+.what-we-do-section ul li h4 { font-size: 20px; }
+.what-we-do-section ul li p { font-size: 13px; line-height: 18px; }
+.site-header .search-form { right: 7px; }
+.inspireitem li img { width: 70%; margin-bottom:10px; }
+.talking-cont-top .button { margin: 0 auto 20px; display: block; }
+.talking-cont-top a { display: inline-block; text-align: center; margin-top: 10px; }
+.talking-cont-top .button span { padding: 5px 30px; }
+.inspire-title p { font-size: 16px; line-height: 20px; }
+.talking-cont-top p{ text-align:center;}
+
+.watch-founder-section ul li p strong { font-size: 16px; }
+.inspire-details-right h4 { font-size: 16px; }
+.inspire-details-right p { font-size: 12px; line-height: 16px; }
+.inspireteam ul li ul li { font-size: 12px; }
+.speking-btm-part h2, .watch-founder-section h2 { font-size: 24px; margin-bottom: 10px; }
+.upcoming-events ul li a, .event { line-height: 20px; }
+.inspire-details-right .button { font-size: 14px; }
+.topspeaking h1 { font-size: 24px; }
+.page-template-privacy_policy h1 { font-size: 17px; }
+.page-template-course h1 { font-size: 24px; line-height: 28px; }
+.page-template-course h3 { font-size: 18px; }
+.page-template-course h2 { font-size: 20px; }
+.page-template-course h4 { font-size: 16px; }
+.page-template-course h5 { font-size: 14px; }
+.page-template-course h3, .course-blog3 h4 { margin: 10px 0 }
+.page-template-course p { font-size: 14px; line-height: 22px; }
+.course-top-content .testimonial-list p { font-size: 14px; }
+.testimonial-list .test-name { font-size: 14px; }
+.course-top-content .button { width: auto; }
+.course-blog3 p strong { font-size: 14px; }
+.course-top-content .button span { padding: 5px 8px; }
+.course-blog6 ul li { font-size: 13px; line-height: 17px; }
+.purple-bg .main-button {/* width: 100%; */margin-left: 0; }
+.course-blog7 .form-section input { width: 100%; }
+
+.course-blog10 h5 { font-size: 14px; line-height: 20px; }
+.course-blog7 .button { margin-left: 0; margin-top: 20px; }
+.course-blog14 ul li::before { margin: 0 8px 0; }
+.course-blog15 h3 span { font-size: 20px; }
+.course-blog15 p em { display: block; margin: 10px 0 0; font-size: 18px; }
+.course-blog15 p a { font-size: 18px; }
+.course-blog15 p span { font-size: 16px; }
+.course-blog16 p a { font-size: 14px; }
+.course-blog16, .faqsection { padding: 40px 0; }
+.faqsection #accordion a { font-size: 12px; line-height: 17px; width:97%; }
+.faqsection #accordion .ui-accordion-content p { font-size: 13px; }
+.product-blog1 h1 { font-size: 32px; line-height: 35px; }
+/*.product-blog2 h2 { font-size: 14px; line-height: 20px; }*/
+.product-blog2 ul { margin-top: 20px; }
+.trans-blog11 h2 { font-size: 26px; }
+.trans-blog3 ul li .content { width: 100%; }
+.trans-blog7 ul li .content h3 { font-size: 18px; }
+.trans-blog4 h2 { font-size: 22px; }
+.trans-blog3 h2 br { display: none; }
+.trans-blog .form-section input { width: 100%; position: relative; margin-bottom:0; margin-right: 0; }
+
+.trans-blog6 h3 { font-size: 18px; }
+.trans-blog6 h2 { font-size: 35px; margin-bottom: 20px; }
+.trans-blog11 ul li { margin-bottom: 20px; margin-right: 0; text-align: center; width: 100%; }
+.lpdacordian .accordion-text { height: 56px; }
+.accordion-details { padding: 20px 0 10px; }
+
+.lpdacordian #accordion h3 a { font-size: 12px; line-height: 14px; width: 45%; }
+.lpdacordian #accordion .accordion-details h3 { font-size: 18px; line-height: 21px; margin-bottom: 12px; }
+.accordion-details p { font-size: 12px; line-height: 18px; margin-bottom: 20px; }
+.accordion-details p em { font-size: 14px; }
+.lpdacordian #accordion .testimonial-list p span { font-size: 12px; line-height: 20px; }
+.testimonial-list .test-name { font-size: 12px; }
+.lpd-blog1 h1 { font-size: 18px; line-height: 24px; }
+.course-top-content .testimonial-list p { font-size: 16px; line-height:24px; }
+.course-top-content .testimonial-list p .fa-quote-right{ bottom:12px;}
+.blog-listing-blog1 h1 a { font-size: 20px; line-height: 24px; }
+.blog-listing .blog-listing-img1 { bottom: 0; }
+.blog-listing-blog1 .nav-links a span { padding: 7px 22px; font-size: 14px; }
+
+.blog-listing-blog1 { padding: 20px 0; }
+.blog-listing .bggreen h2 { font-size: 20px; }
+
+.trans-purplebg-text .main-button{margin-top:20px;}
+.trans-purplebg-text .main-button span{ padding:10px 40px}
+.press-nav ul li a { font-size: 11px; }
+ .lpdacordian .accordion-details .testimonial-list{ padding-left:20px;}
+ .course-blog13 ul{ padding:0;}
+ .course-blog13 ul li p{ width:90%;}
+ .course-blog6 ul li{ padding:0 0 15px 20px;}
+ .page-template-course h2{ font-size:24px;}
+ .page-template-privacy_policy h1{ font-size:23px;}
+ .blog-listing .blog-listing-img2{ bottom:-30px;}
+ .page-template-transform-ideas .green-bg{ padding:25px 0;}
+ .product-blog3 .test-name{ width:69%;/* margin-top:23px;*/ margin-left:4%;}
+
+}
+
+@media (max-width:450px) {
+.top-content h1 { font-size: 22px; line-height: 28px; margin-bottom: 10px; }
+
+
+.form-details { width: 100%; margin: 0 0 10px; }
+.button { width: 100%; }
+.button:hover, .button:focus { box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1); color: #fff; }
+.client-logo ul li { width: 100%; margin: 0 0 20px; }
+.footer .menu { padding: 0; }
+.social-icon ul li { padding: 0 12px 0 0; }
+.green-bg { padding: 25px 0; }
+.client-logo { padding: 30px 0; }
+.topterms ol li { font-size: 16px; }
+
+.about-left p { font-size: 14px; line-height: 24px; }
+.about-testimonials p  { font-size: 16px; line-height: 22px; }
+.about-testimoals { padding: 40px 0; }
+.about-testimoals h2 { margin: 0 0 20px; }
+.about-testimoals h2 { font-size: 34px; }
+.press-nav ul { margin: 20px 0; }
+
+.press-nav ul li { padding: 0 1% 0 0; }
+.page-template-press_template h2 { font-size: 20px; line-height: 24px; }
+.page-template-press_template h3 { font-size: 14px; }
+.page-template-press_template p { font-size: 12px; line-height: 20px; }
+.press-leftimage { width: 100%; }
+.press-righttext { width: 100%; margin: 20px 0 0; }
+.press-blog2 { padding: 20px 0; }
+.press-blog2 ul li { margin-bottom: 15px; }
+.page-template-press_template h4 { font-size: 18px; }
+.boilerplate { margin: 25px 0; }
+.press-blog5 { padding: 25px 0; }
+.press-blog5 ul li h5 { font-size: 16px; margin: 0; }
+.press-img3 { right: 9px; top: -25px; }
+.download-area { padding-bottom: 150px; }
+.video-rightside { width: 100%; }
+.download-leftside ul li { margin-bottom: 10px; width: 100%; padding: 0; }
+.download-rightside ul li { text-align: center; width: 100%; margin-right: 0; }
+.press-blog7 .button { margin-bottom: 0; }
+.download-leftside p { margin-top: 50px; }
+.page-template-contact_us h1 { font-size: 26px; }
+.page-template-contact_us h2 { font-size: 15px; }
+.contact-blog2 .contact-form, .contact-blog2 .contact-form-text { font-size: 14px; }
+.product-blog3 ul li { margin-bottom: 25px; }
+.product-blog3 { padding: 30px 0; }
+.product-blog4 .upcoming-events { padding: 30px 0 150px; }
+.product-blog1 h1 { font-size: 22px; line-height: 26px; }
+.product-blog1 { padding: 20px 0 0; }
+/*.product-blog2 h2 { font-size: 12px; line-height: 18px; }*/
+.rightevents ul li a { font-size: 13px; }
+.trans-top-content img { margin-right: 0; width: 100%; }
+.trans-testimonial-list { width: 100%; }
+.trans-purplebg-text h2 { font-size: 20px; padding-bottom: 15px; }
+.trans-blog1 h2 { font-size: 20px; }
+.trans-blog2 h2 { font-size: 18px; }
+.trans-blog2 h3 { font-size: 16px; }
+.trans-blog3 h2 { font-size: 17px; margin-bottom: 15px; }
+.trans-blog5 p { font-size: 12px; line-height: 19px; }
+.trans-blog7 h2 { font-size: 26px; }
+.lpd-blog2 .form-section p { font-size: 12px; line-height: 18px; }
+.lpdacordian #accordion .accordion-details h3 { font-size: 14px; line-height: 17px; }
+.course-top-content .testimonial-list p .fa-quote-left{ left:0; margin-left:-12px;}
+
+.testmlist .attachment-post-thumbnail.wp-post-image{ width:80px;}
+.product-blog3 .test-details{ width:20%;}
+
+.inspire-title h3{ font-size:34px;}
+.lpd-blog2 .form-section p{ margin-bottom:20px;}
+.lpd-blog2 .form-section p{ font-size:14px;}
+.lpd-blog1 h3{ font-size:18px;}
+.course-top-content .testimonial-list p{ line-height:24px;}
+.trans-testimonial-list p{ line-height:26px;}
+.testimonials{  padding:30px 0;}
+.speking-btm-part h2, .watch-founder-section h2{ font-size:22px; margin-bottom:10px;}
+.about-testimonials .fa-left-quote{ margin-left:-30px;}
+.course-blog6 ul li::before{ padding:0 20px 0 0}
+.topterms ol li p{ margin-top:10px;}
+.topprivacy ul li{ background-position:left 5px;}
+.blog-listing .blog-listing-img2{ bottom:-14px;}
+.about-btm-content .about-one p{ font-size:13px;}
+div.wpcf7-response-output{ margin-top:90px; width:100%;}
+.fa-right-quote{ margin-right:-10px;}
+
+}
+
+/*---------use only when design is customise-----------*/
+@media screen and (min-width:700px) and (max-width:990px) {
+}
+/*include browser specific css styles here*/
+.main aside { behavior: url(PIE.htc); position: relative; }
+
+@media (min-width:768px){
+    ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul, ul.nav-menu .focus > ul, .nav-menu .focus > ul{ clip: inherit;
+    height: inherit;
+    overflow: inherit;
+    width: inherit;}
+}

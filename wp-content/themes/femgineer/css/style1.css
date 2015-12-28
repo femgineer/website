@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.piro_html {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	width: 500px;
+	height: 500px;
+	margin: 0;
+	display: block;
+	padding: 0;
+	z-index: 150001;
+	padding: 0;
+}
+.piro_html table, .piro_html tbody, .piro_html tr, .piro_html th, .piro_html td {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.piro_html img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.piro_html .h_t_l {
+}
+.piro_html .h_t_r {
+}
+.piro_html .h_t_c {
+}
+.piro_html .h_c_l {
+	width: 55px;
+}
+.piro_html .h_c_c {
+	background: none repeat scroll 0 0 #5845E3;
+	margin: 0;
+	padding: 18px;
+}
+.piro_html .h_c_c .div_reg {
+	background:#5845E3;
+	width: 480px;
+	overflow: hidden;
+	height: 480px;
+	margin: 0;
+	padding: 0;
+}
+.piro_html .h_c_c .div_reg img {
+	cursor: move;
+}
+.piro_html .h_c_r {
+}
+.piro_html .h_b_c {
+	cursor: move;
+}
+.piro_html .h_b_l {
+}
+.piro_html .h_b_r {
+}
+.piro_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 150000;
+	background: url(../images/trans-bg.png) left top repeat;
+	display: none;
+	cursor: pointer;
+	opacity:0.8 !important;
+}
+.piro_loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -59px 0 0 -59px;
+	width: 118px;
+	height: 118px;
+	display: block;
+	z-index: 150005;
+	cursor: pointer;
+}
+.piro_loader span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -36px;
+	margin-left: -36px;
+	width: 72px;
+	height: 72px;
+	display: block;
+	z-index: 150009;
+	background: url(loadinfo.gif) center top no-repeat;
+}
+.piro_title {
+	position: fixed;
+	background: url(bg_title.png) bottom repeat-x;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding: 6px 0 10px 0;
+	color: white;
+	z-index: 150000;
+	font-size: 18px;
+	display: none;
+}
+.btn_info {
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	display: block;
+	padding: 0px;
+	color: black;
+	cursor: pointer;
+	background: url(b_w/info.png) no-repeat;
+	z-index: 1500440
+}
+.caption {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	margin: 0;
+	display: block;
+	padding: 0px;
+	color: black;
+	cursor: text;
+	background: url(caption.png);
+	z-index: 150018
+}
+.caption p {
+	display: block;
+	margin: 0;
+	padding: 7px 5px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	color: white;
+	z-index: 150019;
+	color: white;
+}
+.nav_container {
+	position: absolute;
+	right: -16px;
+	height: 20px;
+	z-index: 1500190000000;
+	top:-35px;
+}
+.piro_close {
+	position: absolute;
+	right: 0px;
+	height: 35px;
+	width: 35px;
+	background: url(../images/popup-close.png) no-repeat;
+	cursor: pointer;
+	margin: 0 0 0 0;
+	z-index: 150022;
+	display: none;
+}
+.piro_close:hover{
+	background:url(../images/popup-close-hover.png) no-repeat;
+}
+a.piro_next {
+	position: absolute;
+	width: 20px;
+	right: 0px;
+	height: 20px;
+	text-indent: -999em;
+	outline: none;
+	display: block;
+	margin: 0;
+	background: url(next.png) center right no-repeat;
+	border: none;
+	cursor: pointer;
+	z-index: 150023
+	display:none;
+}
+a:hover.piro_next {
+	background: url(next.png) center right no-repeat;
+}
+.piro_next_fake {
+	position: absolute;
+	width: 20px;
+	right: 0px;
+	height: 20px;
+	outline: none;
+	text-indent: -999em;
+	display: none;
+	margin: 0;
+	background: url(next.png) center right no-repeat;
+	border: none;
+	cursor: auto;
+	z-index: 150020
+}
+.piro_prev_fake {
+	position: absolute;
+	width: 20px;
+	right: 40px;
+	height: 20px;
+	outline: none;
+	text-indent: -999em;
+	display: none;
+	margin: 0;
+	background: url(prev.png) center right no-repeat;
+	border: none;
+	cursor: auto;
+	z-index: 150020;
+	display:none !important;
+}
+a.piro_prev {
+	position: absolute;
+	width: 20px;
+	right: 40px;
+	height: 20px;
+	text-indent: -999em;
+	outline: none;
+	display: block;
+	margin: 0;
+	background: url(prev.png) center left no-repeat;
+	border: none;
+	cursor: pointer;
+	z-index: 150024;
+	display:none !important;
+}
+a:hover.piro_prev {
+	background: url(prev.png) center left no-repeat;
+}
+a.close_pirobox {
+	color: #bb0f05;
+}
+
+.title-box {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 2px solid #C7C7C7;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.title-box h2 {
+    color: #303030;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding: 28px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
