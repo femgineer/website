@@ -191,7 +191,7 @@ jQuery(document).ready(function($) {
         </div>
        </div>
        
-       <div class="bglightgreen">
+       <div class="bglightgreen" id="upcoming-events">
        <div class="main">
        <div class="upcoming-events">
        <?php $upcoming_events = get_field('upcoming_events'); ?>
