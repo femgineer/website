@@ -1526,6 +1526,7 @@ div.wpcf7-response-output { display: block; width: 400px; text-align: center; ma
 .blog-listing .blog-listing-img2 { position: absolute; right: 0; bottom: -50px; }
 .blog-listing-blog1 { padding: 100px 0 55px; }
 .blog-listing-blog1 .hentry { padding: 0 0 60px; }
+.blog-listing-blog1 h1 { text-transform: capitalize; }
 .blog-listing-blog1 h1 a { font-size: 48px; color: #464646; line-height: 50px; margin-bottom: 30px; display: inline-block; position: relative; z-index: 1; }
 .blog-listing-blog1 .entry-meta { font-style: italic; color: #a1a0a0; font-size: 12px; }
 .blog-listing-blog1 .entry-meta a { color: #7c4e8c; text-decoration: underline; font-weight: bold; }
