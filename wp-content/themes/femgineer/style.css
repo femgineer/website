@@ -957,8 +957,120 @@ div.error { position: absolute; bottom: -28px; left: 0; text-align: left; backgr
 .client-logo ul li:last-child { margin-right: 0; }
 .menu-icon { background: url(images/menu-icon.png) no-repeat center center; cursor: pointer; display: none; height: 45px; display: none; width: 40px; position: absolute; left: 0; top: 0; }
 .scrollbar-measure { width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px; }
-/*-----------------Speaking-page---------------------*/
 
+/*-----------------ship-it-page---------------------*/
+.ship-it .green-bg { background: #19a7a9; padding: 50px 0; height: auto; margin: 0 auto; }
+.ship-it .green-bg p.intro { text-align: center; text-transform: uppercase; font-weight: bold; }
+.ship-it .top-content h1 { font-size: 9em; text-align: center; line-height: 96px; margin-bottom: 49px; font-weight: bold; color: #fff; }
+.ship-it .text-underline { text-decoration: underline; }
+.ship-it .top-content h5 { text-align:center;color:#fff;font-weight: 300; }
+.ship-it .top-content h5 span { font-style: italic; }
+.ship-it .first-section { background: #f2f2f2; padding: 75px 0 64px; text-align: center; }
+.ship-it .first-section h3 { color: #4b4b4b; line-height: auto; padding-bottom: 30px; }
+.ship-it .first-section h3 span { font-weight: normal; }
+.ship-it .first-section ul { margin: 0; padding: 0; padding-top: 60px; }
+.ship-it .first-section ul li { display: inline-block; vertical-align: top; width: 230px; margin-right: 170px; }
+.ship-it .first-section ul li:last-child { margin-right: 0; }
+.ship-it .first-section ul li h4 { font-size: 24px; color: #4b4b4b; font-weight: normal; }
+.ship-it .course-start-info { background: #fff; padding: 50px 0; }
+.ship-it .course-start-info .intro { color: #2ea9a5; font-size: 30px; font-weight: bold; text-align: center; }
+.ship-it .course-start-info .start { color: #000; font-size: 30px; font-weight: bold; text-align: center; }
+.ship-it .course-start-info .info { color: #724478; font-weight: bold; text-align: center; font-size: 1.4em; padding: 20px 0; }
+.ship-it .course-start-info .row { border-top: 1px solid #aaa8a8; display: inline-block; margin: 40px 0; }
+.ship-it .course-start-info .row h6 { text-transform: uppercase; }
+.ship-it .course-start-info .left { border-right: 1px solid #aaa8a8; width: 50%; float: left; padding: 30px; }
+.ship-it .course-start-info .left ul { margin: 0 0 50px 0; padding: 0; text-decoration: none; list-style: none; }
+.ship-it .course-start-info .left ul li { margin: 0; font-size: 16px; line-height: 27px; background: url(images/round-circle.png) no-repeat left; padding: 0 20px }
+.ship-it .course-start-info .right { width: 50%; font-size: 16px; float: left; padding: 30px; }
+.ship-it .course-start-info .box { width: 100%; border: 4px solid #2ea9a5; display: inline-block; padding: 40px; margin: 20px 0; }
+.ship-it .course-start-info .box .avatar { height: 100%; display: inline-block; float: left; }
+.ship-it .course-start-info .box .avatar img { width: 150px; margin-right: 40px; }
+.ship-it .course-start-info .box .testimonial { color: #2ea9a5; font-size: 30px; font-weight: bold; }
+.ship-it .course-start-info .box .name { color: #000; font-size: 16px; font-weight: bold; padding-top: 10px; display: inline-block; }
+.ship-it .testimonial { color: #fff; padding: 50px 0; text-align: center; }
+.ship-it .testimonial .avatar { width: 25%; height: 100%; display: inline-block; float: left; }
+.ship-it .testimonial .avatar img { width: 200px; margin-right: 40px; }
+.ship-it .testimonial .quote { width: 75%; display: inline-block; padding-top: 20px; font-size: 18px; }
+.ship-it .testimonial .name { width: 75%; display: inline-block; padding-top: 10px; display: inline-block; font-size: 22px; }
+.ship-it .testimonial .name span { font-size: 18px; }
+.ship-it .purple-bg { height: auto; }
+.ship-it .purple-bg .form-section p { text-align: center; }
+.ship-it .instructors { padding: 50px 0; text-align: center; }
+.ship-it .tuition-dates h2,
+.ship-it .instructors h2 { font-size: 46px; margin: auto; padding-top: 20px; padding-bottom: 20px; color: #000; }
+.ship-it .instructors img { width: 200px; border-radius: 200px; }
+.ship-it .instructors ul { margin: 0; padding: 0; padding-top: 60px; }
+.ship-it .instructors ul li { display: inline-block; vertical-align: top; width: 300px; margin-right: 80px; font-size: 18px; }
+.ship-it .instructors ul li:last-child { margin-right: 0; }
+.ship-it .instructors ul li h4 { font-size: 24px; color: #4b4b4b; }
+.ship-it .tuition-dates { padding: 50px 0; text-align: center; border-top: 2px solid #909090; }
+.ship-it .tuition-dates h2 { color: #000; }
+.ship-it .tuition-dates p { color: #000; font-size: 22px; padding-top: 20px;}
+.ship-it .what-youll-learn h2 { color: #2ea9a5; font-size: 46px; padding-top: 20px; padding-bottom: 60px; }
+.ship-it .what-youll-learn p { color: #000; font-size: 22px; }
+.ship-it .what-youll-learn { padding: 50px 0; text-align: center; }
+.ship-it .what-youll-learn .row { padding-top: 20px; }
+.ship-it .who-not-for h2 { font-size: 46px; margin: auto; padding-top: 20px; padding-bottom: 20px; }
+.ship-it .who-not-for { padding: 50px 0; text-align: left; }
+.ship-it .who-not-for .left { width: 30%; float: left; }
+.ship-it .who-not-for .left p { color: #724478; font-size: 24px; }
+.ship-it .who-not-for .right { width: 70%; display: inline-block; padding: 29px 0 0 60px; font-size: 16px; }
+.ship-it .ready-to-ship-it { background: #f2f2f2; padding: 48px 0; text-align: center; border-top: 2px solid #909090; }
+.ship-it .ready-to-ship-it h2 { font-size: 46px; color: #000; margin: auto; padding-top: 20px; padding-bottom: 60px; }
+.ship-it .ready-to-ship-it h3 { text-transform: uppercase; color: #000; }
+.ship-it .ready-to-ship-it p { color: #000; font-size: 22px; }
+.ship-it .ready-to-ship-it .left,
+.ship-it .tuition-dates .left { width: 45%; float: left; padding-top: 50px; }
+.ship-it .ready-to-ship-it .right,
+.ship-it .tuition-dates .right { width: 45%; float: right; padding-top: 50px;  }
+.ship-it .ready-to-ship-it .left .option,
+.ship-it .tuition-dates .left .option { border: 6px solid #11abad; padding: 40px 10px; }
+.ship-it .ready-to-ship-it .right .option,
+.ship-it .tuition-dates .right .option { border: 6px solid #6e2e7a; padding: 40px 10px; }
+.ship-it .ready-to-ship-it .details,
+.ship-it .tuition-dates .details { font-size: 18px; color: #000; }
+.ship-it .ready-to-ship-it .price,
+.ship-it .tuition-dates .price { font-size: 34px; font-weight: bold; color: #000; padding: 15px 0; }
+.ship-it .ready-to-ship-it .button,
+.ship-it .tuition-dates .button { padding: 20px; }
+.ship-it .guarantee { background: #000; color: #fff; padding-top: 48px; padding-bottom: 48px; }
+.ship-it .guarantee p { font-size: 16px; }
+.ship-it .guarantee .left { width: 75%; float: left; }
+.ship-it .guarantee .right { width: 25%; display: inline-block; text-align: center; }
+.success-stories { background: #f2f2f2; }
+.success-stories img { border-radius: 150px; }
+.success-stories .main { padding-top: 48px; padding-bottom: 48px; text-align: center; text-align: left; }
+.success-stories h2 { font-size: 46px; margin: auto; padding-top: 20px; padding-bottom: 20px; color: #724478; text-align: center; }
+.success-stories .row { border-top: 5px solid #000; margin-top: 40px; padding: 40px 0; }
+.success-stories .left { width: 30%; float: left; text-align: center; }
+.success-stories .left h4 { font-size: 24px; color: #000; margin-bottom: 0; }
+.success-stories .left .title { font-style: italic; font-size: 16px; color: #000; margin-bottom: 20px; }
+.success-stories .left p { color: #724478; font-size: 28px; }
+.success-stories .right { width: 70%; display: inline-block; padding: 29px 0 0 60px; font-size: 16px; }
+.success-stories .box { padding: 30px; border: 5px solid #999; background: white; text-align: center; font-size: 18px; }
+.ship-it .our-course-will { padding: 50px 0; text-align: center; }
+.ship-it .our-course-will h3 { text-transform: uppercase; }
+.ship-it .our-course-will ul { list-style-type: disc; }
+.ship-it .our-course-will ul li { padding-bottom: 20px; }
+.ship-it .our-course-will span { text-decoration: underline; }
+.ship-it .our-course-will .border-top { border-top: 1px solid #909090;     padding-top: 20px; }
+.ship-it .our-course-will .left { width: 50%; float: left; text-align: left; }
+.ship-it .our-course-will .left p { color: #724478; font-size: 30px;     padding-right: 70px; }
+.ship-it .our-course-will .right { display: inline-block; width: 50%; text-align: left; font-size: 18px; }
+.ship-it .our-difference { color: #fff; text-align: center; font-size: 18px; }
+.ship-it .our-difference h2 { font-size: 46px; margin: auto; padding-top: 20px; padding-bottom: 20px; }
+.ship-it .our-difference img { margin: 20px 0 40px 0; border-radius: 150px; }
+.ship-it .our-difference ul { margin: 0; padding: 0; padding-top: 60px; display: inline-flex; list-style-type: none; }
+.ship-it .our-difference ul li { vertical-align: top; width: 250px; height: auto; margin: 30px; padding: 20px; background: #f2f2f2; }
+.ship-it .our-difference ul li p { font-size: 14px; color: #4b4b4b; }
+.ship-it .learning-module { width: 100%; margin-top: 30px; border: 4px solid #a3dcdd; background: #e7f3f3; }
+.ship-it .learning-module .left { width: 20%; float: left; background: #8cd3d4;     text-align: center; }
+.ship-it .learning-module .right { width: 80%; display: inline-block; background: #fff; padding: 20px; text-align: left; }
+.ship-it .learning-module h6 { color: #2ea9a5; margin: 0; text-transform: uppercase; }
+.ship-it .learning-module h3 { margin: 0; padding-bottom: 20px; }
+.ship-it .learning-module p { font-size: 16px; margin: 0; }
+
+/*-----------------Speaking-page---------------------*/
 .topspeaking { margin-bottom: 40px; }
 .topspeaking h1 { font-size: 72px; color: #464646; margin: 62px 0 35px; font-weight: bold; text-align: center; text-transform: capitalize; }
 .topspeaking img { display: inline-block; vertical-align: top; width: 368px; }
@@ -1608,6 +1720,7 @@ ol.comment-list li .comment-content { border: 2px solid #cccccc; padding: 20px; 
 .download-block ul { text-decoration: none; list-style: none; margin: 0; padding: 0; }
 .download-block ul li { display: inline-block; vertical-align: top; width: 250px; max-height: 367px; margin-right: 15px; }
 .download-block ul li img { max-height: 365px; }
+
 /*-----------------footer---------------------*/
 
 .footer-left { width: 510px; float: left; }
@@ -1651,11 +1764,11 @@ ol.comment-list li .comment-content { border: 2px solid #cccccc; padding: 20px; 
 span.wpcf7-not-valid-tip { display: none !important; }
 .darkpink.press-blog5 h2 { text-transform: none; }
 
-  
 
- 
 
-  
+
+
+
 
 /**
 
@@ -1691,6 +1804,8 @@ span.wpcf7-not-valid-tip { display: none !important; }
 .attachment .image-navigation { max-width: 724px; }
 .image-navigation .nav-previous, .image-navigation .nav-next { position: static; }
 .site-main .widget-area { margin-right: 60px; }
+.ship-it .our-difference ul li { width: 33.33%; margin: 10px; }
+.ship-it .instructors ul li { width: 25%; }
 }
 
 @media (max-width: 999px) {
@@ -1711,22 +1826,31 @@ span.wpcf7-not-valid-tip { display: none !important; }
 }
 
 /* Collapse oversized image and pulled images after iPad breakpoint. */
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .site-header .home-link { min-height: 0; }
 .site-title { font-size: 36px; padding: 8px 0 10px; }
 .entry-content img.alignleft, .entry-content .wp-caption.alignleft { margin-left: 0; }
 .entry-content img.alignright, .entry-content .wp-caption.alignright { margin-right: 0; }
 .attachment .image-navigation, .attachment .entry-attachment .attachment { max-width: 604px; padding: 0; width: 100%; }
 .gallery-caption { display: none; }
+
+/* Ship It */
+.ship-it .first-section ul li { width: 25%; margin-right: 10%; }
+.ship-it .course-start-info .left { width: 100%; border-right: none; }
+.ship-it .course-start-info .right { width: 100%; }
+.ship-it .our-course-will .left p { padding-right: 0; }
+.ship-it .our-course-will ul { display: inline-block; }
+.ship-it .our-difference ul { display: inline-block; }
+.ship-it .our-difference ul li { width: 50%; margin: 30px auto; }
+.ship-it .instructors ul li { margin: 0 auto; width: 50%; padding: 30px 0; }
 }
 
 @media (max-width: 643px) {
 .site-title { font-size: 30px; }
 #content .entry-header, #content .entry-content, #content .entry-summary, #content footer.entry-meta, #content .featured-gallery, .search.sidebar .page-content, .blog.sidebar .page-content, .sidebar .post-navigation .nav-links, .paging-navigation .nav-links, #content .author-info, .comments-area .comments-title, .comments-area .comment-list, .comments-area .comment-navigation, .comment-respond, .sidebar .site-info, .sidebar .paging-navigation .nav-links { /*padding-left: 20px; padding-right: 20px;*/ }
 #content .format-status .entry-content, #content .format-status .entry-met { padding-left: 35px; }
-/* Small menu */
 
+/* Small menu */
 .menu-toggle { cursor: pointer; display: inline-block; font: bold 16px/1.3 "Source Sans Pro", Helvetica, sans-serif; margin: 0; }
 .menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active { background: none; border: none; color: #141412; padding: 12px 0 12px 20px; }
 .menu-toggle:focus { outline: thin dotted; }
@@ -1752,14 +1876,51 @@ ul.nav-menu, div.nav-menu > ul { display: none; }
 .comment-metadata, .comment-content, .comment-list .reply { width: 70%; width: -webkit-calc(100% - 104px); width: calc(100% - 104px); }
 .comment-form input[type="text"], .comment-form input[type="email"], .comment-form input[type="url"] { width: -webkit-calc(100% - 120px); width: calc(100% - 120px); }
 .comment-form textarea { height: 80px; /* Smaller field for mobile. */ }
-/* Audio */
 
+/* Audio */
 .format-audio .entry-content:before { display: none; }
 .format-audio .audio-content { background-image: none; float: none; padding-left: 0; width: auto; }
+
+/* Ship It */
+.ship-it .first-section ul li { width: 100%; margin-right: 0; }
+.ship-it .course-start-info .box .avatar { display: block; float: none; text-align: center; }
+.ship-it .course-start-info .box .avatar img { margin-right: 0; }
+.ship-it .our-course-will .left { width: 100%; float: none; }
+.ship-it .our-course-will .right { width: 100%; }
+.ship-it .our-course-will ul { padding: 20px; }
+.ship-it .our-difference ul li { width: 100%; }
+.ship-it .testimonial .avatar { width: 100%; }
+.ship-it .testimonial .avatar img { margin-right: 0; }
+.ship-it .what-youll-learn h2,
+.ship-it .tuition-dates h2,
+.ship-it .instructors h2 { font-size: 2.5em; }
+.ship-it .instructors ul li { width: 100%; }
+.ship-it .ready-to-ship-it .left,
+.ship-it .tuition-dates .left,
+.ship-it .ready-to-ship-it .right,
+.ship-it .tuition-dates .right { width: 100%; }
+.ship-it .guarantee .left { width: 100%; }
+.ship-it .guarantee .right { display: none; }
+.ship-it .who-not-for .left,
+.ship-it .who-not-for .right { width: 100%; }
+.ship-it .who-not-for h2 { font-size: 2em; }
+.ship-it .who-not-for .left p { font-size: 1.5em; }
+.ship-it .who-not-for .right { padding: 29px 0 0 0; }
+.success-stories h2 { font-size: 2em; }
+.success-stories .left,
+.success-stories .right { width: 100%; padding: 0; }
+.success-stories .left p { font-size: 1.6em; }
+.ship-it .learning-module .left { display: none; }
+.ship-it .learning-module .right { width: 100%; }
+.ship-it .learning-module h6,
+.ship-it .learning-module p { font-size: 1em; }
+.ship-it .learning-module h3 { font-size: 1.3em; }
+.ship-it .what-youll-learn p,
+.ship-it .tuition-dates p { font-size: 1.2em; }
+
 }
 
 /* Mobile devices */
-
 @media (max-width: 359px) {
 .site-title { font-weight: normal; }
 .site-description { clip: rect(1px, 1px, 1px, 1px); position: absolute; }
@@ -1770,8 +1931,8 @@ ul.nav-menu, div.nav-menu > ul { display: none; }
 .gallery-columns-3 .gallery-item:nth-of-type(3n), .gallery-columns-5 .gallery-item:nth-of-type(5n), .gallery-columns-7 .gallery-item:nth-of-type(7n), .gallery-columns-9 .gallery-item:nth-of-type(9n) { margin-right: 4px; }
 .gallery br { display: none; }
 .gallery .gallery-item:nth-of-type(even) { margin-right: 0; }
-/* Comments */
 
+/* Comments */
 .comment-author { margin: 0 0 5px; max-width: 100%; }
 .comment-author .avatar { display: inline; margin: 0 5px 0 0; }
 .comment-metadata, .comment-content, .comment-list .reply { width: 100%; }
