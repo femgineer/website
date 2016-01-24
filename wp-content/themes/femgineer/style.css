@@ -1063,8 +1063,9 @@ div.error { position: absolute; bottom: -28px; left: 0; text-align: left; backgr
 .ship-it .our-difference ul { margin: 0; padding: 0; padding-top: 60px; display: inline-flex; list-style-type: none; }
 .ship-it .our-difference ul li { vertical-align: top; width: 250px; height: auto; margin: 30px; padding: 20px; background: #f2f2f2; }
 .ship-it .our-difference ul li p { font-size: 14px; color: #4b4b4b; }
-.ship-it .learning-module { width: 100%; margin-top: 30px; border: 4px solid #a3dcdd; background: #e7f3f3; }
-.ship-it .learning-module .left { width: 20%; float: left; background: #8cd3d4;     text-align: center; }
+.ship-it .learning-module { width: 100%; margin-top: 30px; border: 4px solid #a3dcdd; background: #8cd3d4; }
+.ship-it .learning-module .left { width: 20%; float: left; text-align: center; }
+.ship-it .learning-module .left img { margin-top: 10%; }
 .ship-it .learning-module .right { width: 80%; display: inline-block; background: #fff; padding: 20px; text-align: left; }
 .ship-it .learning-module h6 { color: #2ea9a5; margin: 0; text-transform: uppercase; }
 .ship-it .learning-module h3 { margin: 0; padding-bottom: 20px; }
