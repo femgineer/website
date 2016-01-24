@@ -968,8 +968,8 @@ div.error { position: absolute; bottom: -28px; left: 0; text-align: left; backgr
 .ship-it .first-section { background: #f2f2f2; padding: 75px 0 64px; text-align: center; }
 .ship-it .first-section h3 { color: #4b4b4b; line-height: auto; padding-bottom: 30px; }
 .ship-it .first-section h3 span { font-weight: normal; }
-.ship-it .first-section ul { margin: 0; padding: 0; padding-top: 60px; }
-.ship-it .first-section ul li { display: inline-block; vertical-align: top; width: 230px; margin-right: 170px; }
+.ship-it .first-section ul { margin: 0; padding: 0; padding-top: 60px; display: inline-flex; list-style-type: none; }
+.ship-it .first-section ul li { vertical-align: top; width: 230px; margin-right: 100px; }
 .ship-it .first-section ul li:last-child { margin-right: 0; }
 .ship-it .first-section ul li h4 { font-size: 24px; color: #4b4b4b; font-weight: normal; }
 .ship-it .course-start-info { background: #fff; padding: 50px 0; }
@@ -999,8 +999,8 @@ div.error { position: absolute; bottom: -28px; left: 0; text-align: left; backgr
 .ship-it .tuition-dates h2,
 .ship-it .instructors h2 { font-size: 46px; margin: auto; padding-top: 20px; padding-bottom: 20px; color: #000; }
 .ship-it .instructors img { width: 200px; border-radius: 200px; }
-.ship-it .instructors ul { margin: 0; padding: 0; padding-top: 60px; }
-.ship-it .instructors ul li { display: inline-block; vertical-align: top; width: 300px; margin-right: 80px; font-size: 18px; }
+.ship-it .instructors ul { margin: 0; padding: 0; padding-top: 60px; display: inline-flex; list-style-type: none; }
+.ship-it .instructors ul li { vertical-align: top; width: 200px; margin-right: 80px; font-size: 18px; }
 .ship-it .instructors ul li:last-child { margin-right: 0; }
 .ship-it .instructors ul li h4 { font-size: 24px; color: #4b4b4b; }
 .ship-it .tuition-dates { padding: 50px 0; text-align: center; border-top: 2px solid #909090; }
@@ -1805,7 +1805,8 @@ span.wpcf7-not-valid-tip { display: none !important; }
 .image-navigation .nav-previous, .image-navigation .nav-next { position: static; }
 .site-main .widget-area { margin-right: 60px; }
 .ship-it .our-difference ul li { width: 33.33%; margin: 10px; }
-.ship-it .instructors ul li { width: 25%; }
+.ship-it .instructors ul li { width: 25%; margin-right: 10%; }
+.ship-it .first-section ul li { width: 25%; margin-right: 10%; }
 }
 
 @media (max-width: 999px) {
@@ -1835,14 +1836,15 @@ span.wpcf7-not-valid-tip { display: none !important; }
 .gallery-caption { display: none; }
 
 /* Ship It */
-.ship-it .first-section ul li { width: 25%; margin-right: 10%; }
 .ship-it .course-start-info .left { width: 100%; border-right: none; }
 .ship-it .course-start-info .right { width: 100%; }
 .ship-it .our-course-will .left p { padding-right: 0; }
-.ship-it .our-course-will ul { display: inline-block; }
+.ship-it .our-course-will ul,
+.ship-it .instructors ul,
 .ship-it .our-difference ul { display: inline-block; }
 .ship-it .our-difference ul li { width: 50%; margin: 30px auto; }
-.ship-it .instructors ul li { margin: 0 auto; width: 50%; padding: 30px 0; }
+.ship-it .instructors ul li,
+.ship-it .instructors ul li:last-child { margin: 0 auto; width: 50%; padding: 30px 0; }
 }
 
 @media (max-width: 643px) {
