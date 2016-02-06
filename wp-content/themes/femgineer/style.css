@@ -1487,7 +1487,7 @@ div.wpcf7-response-output { display: block; width: 400px; text-align: center; ma
 .trans-blog3 { padding: 65px 0; position: relative; }
 .trans-blog3 .employeeimg { position: absolute; right: 0; bottom: 0; }
 .trans-blog3 h2 { font-size: 36px; color: #7c4e8c; margin-bottom: 40px }
-.trans-blog3 ul { margin: 0; padding: 0; list-style: none; overflow: hidden; position: relative; z-index: 999; }
+.trans-blog3 ul { margin: 0; padding: 0; list-style: none; position: relative; z-index: 999; }
 .trans-blog3 ul li { display: inline-block; vertical-align: top; width: 500px; margin-bottom: 40px; margin-right: 80px; }
 .trans-blog3 ul li img { width: 100px; display: inline-block; vertical-align: top; margin-right: 40px; }
 .trans-blog3 ul li .content { width: 300px; display: inline-block; line-height: 28px; }
