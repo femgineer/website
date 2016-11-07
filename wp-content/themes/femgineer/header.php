@@ -44,7 +44,10 @@
         })();
     </script>
 
+    <?php wp_head(); ?>
+
     <?php if (is_page_template('templates/transform-ideas.php')) { ?>
+    	<link rel="image_src" href="http://femgineer.com/wp-content/uploads/2015/07/transform_topimg.png" type="image/png">
         <!-- Facebook Conversion Code for TYI Leads -->
         <script>(function() {
                 var _fbq = window._fbq || (window._fbq = []);
@@ -62,11 +65,6 @@
         </script>
         <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017725049054&amp;cd[value]=0.01&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
         <!-- end facebook conversion code for tyi leads -->
-        <!-- image for facebook -->
-        <meta property="og:title" content="How to Transform Your Ideas into Software Products"/>
-        <meta property="og:image" content="http://femgineer.com/transform-ideas/images/transform-ideas-large-facebook.png"/>
-        <meta property="og:url" content="http://femgineer.com/transform-ideas/"/>
-        <!-- end image for facebook -->
         <!-- Facebook Conversion Code for How to Transform Your Ideas into Software Products -->
         <script type="text/javascript">
             var fb_param = {};
@@ -86,8 +84,6 @@
     <?php } else { ?>
         <script src="//load.sumome.com/" data-sumo-site-id="52ec45f8c340b0bf66341dfc9400b3d2e8a302c72ce9d049f9972eb54e71f722" async="async"></script>
     <?php } ?>
-
-    <?php wp_head(); ?>
 
     <link rel='stylesheet' id='twentythirteen-style-css'  href='<?php echo get_template_directory_uri(); ?>/css/fonts.css' type='text/css' media='all' />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -112,9 +108,7 @@
                             <a class="repo_nlogo" href="<?php echo get_site_url(); ?>" title="logo">
                                 <img alt="logo" src="<?php echo get_field('logo_image','option'); ?>" />
                             </a>
-                            <?php //wp_nav_menu(array('menu'=>'topmenu', 'container_id'=>'menuBlock', 'menu_class' => 'nav-menu','walker'  => new Walker_Custom_Menu()));
-                                wp_nav_menu(array('menu'=>'topmenu', 'container_id'=>'menuBlock', 'menu_class' => 'nav-menu', 'walker'=>new themeslug_walker_nav_menu()));
-                            ?>
+                            <?php wp_nav_menu(array('menu'=>'topmenu', 'container_id'=>'menuBlock', 'menu_class' => 'nav-menu', 'walker'=>new themeslug_walker_nav_menu())); ?>
 
                             <form action="<?php echo get_site_url(); ?>" class="search-form" method="get" role="search">
                                 <label>

@@ -21,12 +21,7 @@ if ( post_password_required() )
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
-			<?php
-				/* printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'twentythirteen' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' ); */
-					
-					echo get_comments_number(). '&nbsp;Comments';
-			?>
+			<?php echo get_comments_number(). '&nbsp;Comments'; ?>
 		</h2>
 
 		<ol class="comment-list">
@@ -37,12 +32,11 @@ if ( post_password_required() )
 					'avatar_size' => 74,
 				) ); 
 			?>
-            <?php // wp_list_comments('callback=wordpressapi_comments'); ?>
 
 		</ol><!-- .comment-list -->
 
 		<?php
-			// Are there comments to navigate through?
+			/* Are there comments to navigate through? */
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
 		<nav class="navigation comment-navigation" role="navigation">
@@ -50,13 +44,13 @@ if ( post_password_required() )
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentythirteen' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentythirteen' ) ); ?></div>
 		</nav><!-- .comment-navigation -->
-		<?php endif; // Check for comment navigation ?>
+		<?php endif; /* Check for comment navigation */ ?>
 
 		<?php if ( ! comments_open() && get_comments_number() ) : ?>
 		<p class="no-comments"><?php _e( 'Comments are closed.' , 'twentythirteen' ); ?></p>
 		<?php endif; ?>
 
-	<?php endif;  // have_comments() ?>
+	<?php endif; ?>
 
 	<?php 
 	
@@ -73,11 +67,6 @@ if ( post_password_required() )
     ( $req ? '' : '' ) .
     '<div class="comment-form-email form-details"><input placeholder="Email*" id="email" name="email" type="text" class="validcomment" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' /></div></div>',
-
- /* 'url' =>
-    '<p class="comment-form-url"><label for="url">' . __( 'Website', 'domainreference' ) . '</label>' .
-    '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-    '" size="30" /></p>',*/
 );
 	$args = array(
   'id_form'           => 'commentform',
@@ -112,11 +101,6 @@ if ( post_password_required() )
     __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) .
     '</p>',
    'comment_notes_after' =>'',
-  /*'comment_notes_after' => '<p class="form-allowed-tags">' .
-    sprintf(
-      __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s' ),
-      ' <code>' . allowed_tags() . '</code>'
-    ) . '</p>', */
 
   'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 );

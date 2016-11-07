@@ -294,20 +294,6 @@ jQuery(document).ready(function($) {
            </div>
            </div>
           
-      
-   
-        
-        
-        
-        
-        
-        
-        
- 
-    
-    <?php // comments_template();
-	//the_content(); 
-	 ?>
     <?php endwhile; ?>
   </div>
   <!-- #content --> 

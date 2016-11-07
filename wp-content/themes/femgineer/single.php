@@ -17,10 +17,7 @@ get_header(); ?>
   <?php  wpb_get_post_views(get_the_ID()); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php //twentythirteen_post_nav(); ?>
                 
-                <!--
-                http://172.16.0.193/wordpress/femgineer/the-art-of-micro-mentoring/ -->
                 <div class="purple-bg">
                     <div class="main">
                     
@@ -46,5 +43,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

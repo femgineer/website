@@ -16,7 +16,6 @@
 
 get_header(); ?>
 
-<?php //echo $blgid = get_the_ID(); ?>
 <script>
 var bno=0;
 						var pages =0;
@@ -28,7 +27,6 @@ var bno=0;
 										
 										bno++;
 										pages = pages+<?php echo get_option('posts_per_page '); ?>;
-										    //pages = 0;
 										jQuery.ajax({
 											url: ajaxurl,
 											
@@ -39,10 +37,8 @@ var bno=0;
 												},
 											   success:function(data) {
 												   
-												  // alert(data);
 												  if(data)
 												  {
-												  // $('.bloglist'+(bno-1)).append(data);
 												   $('.bloglist'+0).append(data);
 												   $('.loder').css('display','none');
 												  }else
@@ -79,10 +75,6 @@ var bno=0;
                 
 			<?php endwhile; ?>
               <div class="bloglist0"> </div>
-			<?php  //twentythirteen_paging_nav(); 
-			
-			
-			?>
             <img src="<?php echo get_site_url();?>/loader.gif"  class="loder" />
             <div class="nav-links">
            
@@ -107,7 +99,6 @@ var bno=0;
 				$blogitem = get_field('select_top_category',7237); 
                                foreach($blogitem  as $blogm)
                                {
-                                  // echo '<br>'.$blogm;   
                                   $yourcat = get_category($blogm);
                                         if ($yourcat) {
                                         echo '<div class="populer_blog"><h4>' . $yourcat->name . '</h4>';
@@ -121,7 +112,6 @@ var bno=0;
                                                         <a href="'.get_the_permalink($post->ID).'">'.get_the_title($post->ID).'</a>
                                                     </li>';
                                                  endforeach; 
-                                               // wp_reset_postdata();
                                         echo '</ul></div>';
                                }
                                
@@ -131,7 +121,6 @@ var bno=0;
               
        </div>
 </div>
-<?php //get_sidebar(); ?>
     </div>
 </div>
 <?php get_footer(); ?>

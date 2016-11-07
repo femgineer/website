@@ -66,7 +66,6 @@ get_header(); ?>
 				{
 						$social.= '<li><a target="_blank" href="'.$social_ic['link'].'" title="'.$social_ic['title'].'"><i class="fa '.$social_ic['icon_class'].'"></i></a></li>';
 				}
-			 	// echo '<ul>'.$social.'</ul>'; 
 			 ?>
              <div class="instructor">
              	<div class="inst-image">

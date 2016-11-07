@@ -13,6 +13,7 @@ function sso_check () {
     $nonce = esc_attr( $_GET['nonce'] );
     $salt = esc_attr( $_GET['salt'] );
     $user = esc_attr( $_GET['user'] );
+    $bounce = esc_attr( $_GET['bounce'] );
     $hash = base64_encode( hash( 'sha256', $nonce . $salt, false ) );
     $hash = substr( $hash, 0, 64 );
     if ( get_transient( 'sso_token' ) == $hash ) {
@@ -24,9 +25,9 @@ function sso_check () {
         if ( is_a( $user, 'WP_User' ) ) {
             wp_set_current_user( $user->ID, $user->user_login );
             wp_set_auth_cookie( $user->ID );
-            do_action( 'wp_login', $user->user_login );
+            do_action( 'wp_login', $user->user_login, $user );
             delete_transient( 'sso_token' );
-            wp_safe_redirect( admin_url() );
+            wp_safe_redirect( admin_url( $bounce ) );
         } else {
             sso_req_login();
         }

@@ -29,7 +29,6 @@ get_header(); ?>
         <div class="blog-listing-blog1">
 		<?php if ( have_posts() ) : ?>
 
-			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content-blogs', get_post_format() ); ?>
 			<?php endwhile; ?>
@@ -44,8 +43,6 @@ get_header(); ?>
 		</div><!-- #content -->
         
         
-
-<?php //get_sidebar(); ?>
     </div>
 </div>
 <?php get_footer(); ?>

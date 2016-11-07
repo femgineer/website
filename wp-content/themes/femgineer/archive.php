@@ -55,7 +55,6 @@ get_header(); ?>
 				$blogitem = get_field('select_top_category',7237); 
                                foreach($blogitem  as $blogm)
                                {
-                                  // echo '<br>'.$blogm;   
                                   $yourcat = get_category($blogm);
                                         if ($yourcat) {
                                         echo '<div class="populer_blog"><h4>' . $yourcat->name . '</h4>';
@@ -79,7 +78,6 @@ get_header(); ?>
               
        </div>
 </div>
-<?php //get_sidebar(); ?>
     </div>
 </div>
 <?php get_footer(); ?>

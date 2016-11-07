@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: Privacy policy
+ * Template Name: Privacy policy
  */
 
 get_header(); ?>
@@ -31,11 +31,6 @@ get_header(); ?>
          </div>
           <img src="<?php echo get_template_directory_uri(); ?>/images/privacy-img4.png" class="privacy-img4" />
        </div>
-       
-         
-       <?php // comments_template();
-	//the_content(); 
-	 ?>
     <?php endwhile; ?>
   </div>
   <!-- #content --> 

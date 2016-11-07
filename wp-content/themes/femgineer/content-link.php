@@ -39,5 +39,5 @@
 			<?php get_template_part( 'author-bio' ); ?>
 		<?php endif; ?>
 	</footer><!-- .entry-meta -->
-	<?php endif; // is_single() ?>
+	<?php endif; ?>
 </article><!-- #post -->

@@ -1,11 +1,7 @@
 <?php
-
 /**
-
- *Template Name: Course
-
+ * Template Name: Course
  */
-
 
 
 get_header(); ?>
@@ -142,9 +138,7 @@ get_header(); ?>
 
           <?php 
 
-		  echo $course_top[0]['information_content']; 
-
-		  //echo do_shortcode('[SEND_GUIDE color="purple"]');?>
+		  echo $course_top[0]['information_content']; ?>
 
           </div>
 
@@ -162,9 +156,9 @@ get_header(); ?>
 
        <div class="course-purplebg-text">
 
-         <?php //speaker_text 
+         <?php
 
-		  echo  '<p>'.$course_top[0]['speaker_text'].'</p>'; 
+		  echo '<p>'.$course_top[0]['speaker_text'].'</p>'; 
 
 		 ?></div>
 
@@ -212,9 +206,7 @@ get_header(); ?>
 
            <div class="main border-link">
 
-            <h4><?php the_field('green_background_text');
-
-			 ?></h4>
+            <h4><?php the_field('green_background_text'); ?></h4>
 
            </div>
 
@@ -228,11 +220,7 @@ get_header(); ?>
 
            
 
-             <?php the_field('wow_your_audience');
-
-			 
-
-			 ?>
+             <?php the_field('wow_your_audience'); ?>
 
             
 
@@ -274,11 +262,7 @@ get_header(); ?>
 
            
 
-             <?php the_field('who_is_this_course_for');
-
-			 
-
-			 ?>
+             <?php the_field('who_is_this_course_for'); ?>
 
             
 
@@ -294,11 +278,7 @@ get_header(); ?>
 
            <img src="<?php echo get_template_directory_uri(); ?>/images/course-img.png" alt="" title="" class="course-img"/>
 
-             <?php the_field('what_from_the_course');
-
-			 
-
-			 ?>
+             <?php the_field('what_from_the_course'); ?>
 
             
 
@@ -451,9 +431,6 @@ get_header(); ?>
 						$social.= '<li><a class="nohover" target="_blank" href="'.$social_ic['link'].'" title="'.$social_ic['title'].'"><i class="fa '.$social_ic['social_button_calss'].'"></i></a></li>';
 
 				}
-
-			 	 
-
 			 ?>
 
              <div class="instructor">
@@ -490,11 +467,7 @@ get_header(); ?>
 
 				 
 
-			 <?php }
-
-			 
-
-			 ?>
+			 <?php } ?>
 
             </div>
 
@@ -512,11 +485,7 @@ get_header(); ?>
 
            
 
-             <?php the_field('why_your_course');
-
-			 
-
-			 ?>
+             <?php the_field('why_your_course'); ?>
 
             
 
@@ -571,35 +540,23 @@ get_header(); ?>
 				 	   $position = get_field('position',$id);
 
 					   
-
 					   echo '<span><strong>'.$post_title.'</strong>'.$position.'</span>';
 
 					 
-
-					 
-
 					 echo '</li>';
 
 					}
 
 				 echo '</ul>';
 
-				//print_r($select_student);
-
-			 }
-
-			 
+			 }			 
 
 			 ?>
-
             
-
            </div>
 
      </div>
-
      
-
     <div class="course-blog14 bglightpink" id="enroll-now">
 
         <div class="main border-link">
@@ -611,24 +568,12 @@ get_header(); ?>
         </div>
 
     </div>
-
         
-
     <div class="green-bg course-blog15 darkgreen-bg" id="price"> 
 
            <div class="main">
-
            
-
-             <?php 
-
-			 the_field('price_area')
-
-			 
-
-			 ?>
-
-            
+             <?php the_field('price_area'); ?>
 
            </div>
 
@@ -638,13 +583,7 @@ get_header(); ?>
 
            <div class="main border-link">
 
-            <?php 
-
-			 the_field('looking_to_register_text')
-
-			 
-
-			 ?>
+            <?php the_field('looking_to_register_text'); ?>
 
            </div>
 
@@ -669,19 +608,12 @@ get_header(); ?>
                         <?php 
 
 						foreach($faq_list as $faq_lis)
-
 						{
-
-							echo ' <h3><a href="#">'.$faq_lis['question'].'</a></h3>
-
-                        <div class="border-link">'.$faq_lis['answer'];
-
-						
+							echo '<h3><a href="#">' . $faq_lis['question'] . '</a></h3><div class="border-link">' . $faq_lis['answer'];
 
 						 $sub_accordian =  $faq_lis['sub_accordian']; 
 
 									if($sub_accordian)
-
 									{
 
 										$htmlsub = '<div class="accordion nested_acordian">';
@@ -696,39 +628,22 @@ get_header(); ?>
 
 										}
 
-										$htmlsub.='</div>';	
-
+										$htmlsub.='</div>';
 										
-
 										echo $htmlsub ; 
-
 									}
-
 									
-
-						echo '</div>';	
-
+						echo '</div>';
 						}
-
 						?>
-
-                       
-
-                        
 
                       </div>
 
-                    </div>        
-
-               
-
-            
+                    </div>
 
            </div>
 
    </div>
-
-   
 
     <div class="bglightpink course-blog14 course-blog18" id="tips-tricks"> 
 
@@ -736,60 +651,29 @@ get_header(); ?>
 
             <img src="<?php echo get_template_directory_uri(); ?>/images/course-img5.png" alt="" title="" class="course-img4"/>
 
-             <?php the_field('get_our_favorite_tips');
-
-			 ?>
-
-            
+             <?php the_field('get_our_favorite_tips'); ?>
 
            </div>
 
      </div>
-
-     
 
     <div class="green-bg course-blog15 darkgreen-bg" id="pricearea"> 
 
            <div class="main">
 
-           
-
-             <?php 
-
-			 the_field('price_area')
-
-			 
-
-			 ?>
-
-            
+             <?php the_field('price_area'); ?>
 
            </div>
-
      </div>
 
-     
-
     <div class="bglightgreen course-blog16" id="enrollment> 
-
            <div class="main border-link">
-
             <?php the_field('enrollment_closes'); ?>
-
            </div>
-
    </div>
-
-
-
-   
-
     <?php endwhile; ?>
-
   </div>
-
   <!-- #content --> 
-
 </div>
 
 <?php get_footer(); ?>

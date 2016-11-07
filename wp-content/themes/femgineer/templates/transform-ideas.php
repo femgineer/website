@@ -13,7 +13,6 @@ get_header(); ?>
     <div class="green-bg">
       <div class="trans-top-content">
       	<?php $top_slider = get_field('top_slider');
-		//print_r($top_slider);
 		foreach($top_slider as $top_slid)
 		{ ?>
          <div class="main">
@@ -50,7 +49,7 @@ get_header(); ?>
     <div class="purple-bg trans-blog">
        <div class="main">
        <div class="trans-purplebg-text">
-         <?php //speaker_text 
+         <?php
 		 the_field('this_book_will_showu');
 		 ?> <div class="form-section"> 
          <form method="post" id="guide-form" novalidate action="//femgineer.us6.list-manage.com/subscribe/post?u=21e8e255f2ac03e542d1abcaa&amp;id=8accc8d481" name="mc-embedded-subscribe-form" target="_blank">
@@ -116,7 +115,6 @@ get_header(); ?>
             <h2><?php echo get_field('people_are_already_raving_title');?></h2>
              <ul>
             <?php 
-                //testimonial on home page
                  $select_testimonial = get_field('select_people'); 
                 foreach($select_testimonial  as $select_testimonia)
                 { ?>

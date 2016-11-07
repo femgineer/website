@@ -42,10 +42,7 @@ get_header(); ?>
                   </div>
 		<?php } } ?>
           <div class="lpd-top-list">
-          <?php 
-		  
-		  the_field('top_content'); 
-		  //echo do_shortcode('[SEND_GUIDE color="purple"]');?>
+          <?php the_field('top_content'); ?>
           </div>
         </div>
       </div>
@@ -56,7 +53,7 @@ get_header(); ?>
        
          
          <div class="form-section"> 
-              <?php //speaker_text 
+              <?php 
 		  echo  '<p>'.get_field('free_trail_text').'</p>'; 
 		 ?>  
                <form method="post" id="guide-form" novalidate="novalidate" action="//femgineer.us6.list-manage.com/subscribe/post?u=21e8e255f2ac03e542d1abcaa&amp;id=7e7073ed2f" name="mc-embedded-subscribe-form" target="_blank">
@@ -86,9 +83,7 @@ get_header(); ?>
 							$bgcolor = $select_Background[0]['colour_one'];
 							 $image = $select_Background[0]['image'];
 							 $text_color = $select_Background[0]['text_color'];
-							  $arrow_color = $select_Background[0]['arrow_color'];
-							// echo '<style type="text/css"> #accordion'.$id.' a{color:'.$text_color.';}</style>';
-							
+							  $arrow_color = $select_Background[0]['arrow_color'];							
 						
 							echo '<h3 id="accordion'.$id.'" class="fq_title" style=" background-color:'.$bgcolor.'; color:'.$text_color.'; "><div class="accordion-text "><div class="accordion-lpd"><div class="main"><div class="arrow-img" style="background-color:'.$arrow_color.';"></div><a href="#" style="color:'.$text_color.';">'.$faq_lis['qiestion'].'</a><img src="'. $image.'" class="image_lpdq"></div></div></div></h3>';
 							?>
@@ -146,7 +141,7 @@ get_header(); ?>
        
          
          <div class="form-section"> 
-              <?php //speaker_text 
+              <?php
 		  echo  '<p>'.get_field('free_trail_text').'</p>'; 
 		 ?>     <form method="post" id="guide-form-2" novalidate action="//femgineer.us6.list-manage.com/subscribe/post?u=21e8e255f2ac03e542d1abcaa&amp;id=7e7073ed2f" name="mc-embedded-subscribe-form" target="_blank">
                 <div class="form-details">

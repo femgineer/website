@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: Products
+ * Template Name: Products
  */
 
 get_header(); ?>
@@ -106,7 +106,6 @@ get_header(); ?>
                                $blogitem = get_field('select_popular_category'); 
                                foreach($blogitem  as $blogm)
                                {
-                                  // echo '<br>'.$blogm;   
                                   $yourcat = get_category($blogm);
                                         if ($yourcat) {
                                         echo '<h5>' . $yourcat->name . '   <i class="fa fa-angle-right"></i></h5>';
@@ -124,7 +123,6 @@ get_header(); ?>
                                         echo '</ul>';
                                }
                                
-                               //print_r($blogitem );
                                ?>
                         </div>
                         <div class="rightevents">
@@ -143,22 +141,6 @@ get_header(); ?>
                </div>
                
            </div>
-          
-     
-      
-   
-        
-        
-        
-        
-        
-        
-        
- 
-    
-    <?php // comments_template();
-	//the_content(); 
-	 ?>
     <?php endwhile; ?>
   </div>
   <!-- #content --> 

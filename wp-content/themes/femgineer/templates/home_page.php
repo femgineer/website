@@ -1,30 +1,9 @@
 <?php
-
-
-
 /**
-
-
-
- *Template Name: Home Page
-
-
-
+ * Template Name: Home Page
  */
 
-
-
-
-
-
-
 get_header(); ?>
-
-
-
-
-
-
 
 <div id="primary" class="content-area">
 
@@ -52,38 +31,7 @@ get_header(); ?>
 
         <div class="main">
 
-
-
-          <?php
-
-
-
-		  the_content(); 
-
-
-
-		//top banner content
-
-
-
-		//echo get_field('top_content');
-
-
-
-		?>
-
-
-
-          <?php // echo do_shortcode('[SEND_GUIDE color="purple"]');
-
-
-
-		  
-
-
-
-		  ?>
-
+          <?php the_content(); ?>
 
 
           <div class="form-section">
@@ -152,7 +100,7 @@ get_header(); ?>
 
 
 
-		//testimonial on home page
+		/* testimonial on home page */
 
 
 
@@ -297,15 +245,6 @@ get_header(); ?>
       	<div class="main">
 
 
-
-        
-
-
-
-        <?php //echo do_shortcode('[SEND_GUIDE color="green"]');?>
-
-
-
         <div class="form-section">
 
 
@@ -378,131 +317,34 @@ get_header(); ?>
   <h2><?php echo $logo_title; ?></h2> <?php } ?>
 
         <ul>
-
-
-
-        <?php $add_logos_item = get_field('add_logos_item'); 
-
-
-
+        <?php $add_logos_item = get_field('add_logos_item');
 			foreach($add_logos_item  as $add_logos)
-
-
-
 			{
-
-
-
 				if($add_logos['link'])
-
-
-
 				{
-
-
-
 					echo '<li><a title="'.$add_logos['title'].'" target="_blank" href="'.$add_logos['link'].'" title="'.$add_logos['title'].'"><img src="'.$add_logos['logo'].'" alt="'.$add_logos['title'].'" /></a></li>';	
 
-
-
 				}else
-
-
-
 				{
-
-
-
 					echo '<li><img src="'.$add_logos['logo'].'" alt="'.$add_logos['title'].'" /></li>';	
-
-
-
 				}
 
-
-
-				
-
-
-
-				
-
-
-
 			}
-
-
-
 		?>
-
-
-
-      
-
-
-
         </ul>
 
-
-
         </div>
 
-
-
         </div>
-
-
-
-        
-
-
-
- 
-
-
-
-    
-
-
-
-    <?php // comments_template();
-
-
-
-	//the_content(); 
-
-
-
-	 ?>
-
-
 
     <?php endwhile; ?>
 
-
-
   </div>
-
-
 
   <!-- #content --> 
 
-
-
 </div>
 
-
-
 <!-- #primary -->
-
-
-
-
-
-
-
-<?php //get_sidebar(); ?>
-
-
 
 <?php get_footer(); ?>

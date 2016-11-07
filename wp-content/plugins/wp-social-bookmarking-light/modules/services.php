@@ -65,22 +65,22 @@ class WpSocialBookmarkingLight
      */
     function hatena()
     {
-        $url = "http://b.hatena.ne.jp/add?mode=confirm&url={$this->encode_url}&title={$this->encode_title}";
+        $url = "//b.hatena.ne.jp/add?mode=confirm&url={$this->encode_url}&title={$this->encode_title}";
         $alt = __( "Bookmark this on Hatena Bookmark", WP_SOCIAL_BOOKMARKING_LIGHT_DOMAIN );
         $icon = WP_SOCIAL_BOOKMARKING_LIGHT_IMAGES_URL."/hatena.gif";
         return $this->link( $url, $alt, $icon, 16, 12 );
     }
     function hatena_users()
     {
-        $url = "http://b.hatena.ne.jp/entry/{$this->url}";
+        $url = "//b.hatena.ne.jp/entry/{$this->url}";
         $alt = sprintf( __("Hatena Bookmark - %s", WP_SOCIAL_BOOKMARKING_LIGHT_DOMAIN), $this->title );
-        $icon = "http://b.hatena.ne.jp/entry/image/{$this->url}";
+        $icon = "//b.hatena.ne.jp/entry/image/{$this->url}";
         return $this->link( $url, $alt, $icon, null, null );
     }
     function hatena_button()
     {
         $options = wp_social_bookmarking_light_options();
-        $url = "http://b.hatena.ne.jp/entry/{$this->url}";
+        $url = "//b.hatena.ne.jp/entry/{$this->url}";
         $title = $this->title;
         $alt = __( "Bookmark this on Hatena Bookmark", WP_SOCIAL_BOOKMARKING_LIGHT_DOMAIN );
         return $this->link_raw('<a href="'.$url.'"'
@@ -102,23 +102,23 @@ class WpSocialBookmarkingLight
         $twitter = $options['twitter'];
         $data_url = $this->url;
         $data_text = $this->title;
-        $data_via = $twitter['via'] !== '' ? 'data-via="'.$twitter['via'].'"' : '';
-        $data_size = $twitter['size'] === 'large' ? 'data-size="large"' : '';
-        $data_related = $twitter['related'] !== '' ? 'data-related="'.$twitter['related'].'"' : '';
-        $data_hashtags = $twitter['hashtags'] !== '' ? 'data-hashtags="'.$twitter['hashtags'].'"' : '';
-        $data_dnt = $twitter['dnt'] ? 'data-dnt="true"' : '';
-        $data_lang = $twitter['lang'] !== '' ? 'data-lang="'.$twitter['lang'].'"' : '';
+        $data_via = $twitter['via'] !== '' ? ' data-via="'.$twitter['via'].'"' : '';
+        $data_size = $twitter['size'] === 'large' ? ' data-size="large"' : '';
+        $data_related = $twitter['related'] !== '' ? ' data-related="'.$twitter['related'].'"' : '';
+        $data_hashtags = $twitter['hashtags'] !== '' ? ' data-hashtags="'.$twitter['hashtags'].'"' : '';
+        $data_dnt = $twitter['dnt'] ? ' data-dnt="true"' : '';
+        $data_lang = $twitter['lang'] !== '' ? ' data-lang="'.$twitter['lang'].'"' : '';
 
         return $this->link_raw(
-            '<a href="https://twitter.com/share" class="twitter-share-button"{count}'
+            '<a href="https://twitter.com/share" class="twitter-share-button"'
             .' data-url="'.$data_url.'"'
             .' data-text="'.$data_text.'"'
-            .' '.$data_via
-            .' '.$data_size
-            .' '.$data_related
-            .' '.$data_hashtags
-            .' '.$data_dnt
-            .' '.$data_lang
+            .$data_via
+            .$data_size
+            .$data_related
+            .$data_hashtags
+            .$data_dnt
+            .$data_lang
             .'>Tweet</a>'
         );
     }

@@ -8,25 +8,6 @@ get_header(); ?>
 <script>
 jQuery(document).ready(function($) {
 	
-	
-	/* $('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	}); */
-	
 	$('.popup-modal').magnificPopup({
 		type: 'inline',
 
@@ -56,45 +37,6 @@ jQuery(document).ready(function($) {
 		fixedContentPos: false
 	});
 });
-
-
-/*function slidr_popup(pid)
-		{
-			 $('.loder').css('display','block'); 
-			//alert(pid);
-			var pidno = pid; 
-				//$('.loder').css('display','block');
-				 var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
-				jQuery.ajax({
-					url: ajaxurl,
-					
-					data: {
-						'action':'get_sliderpopup',
-						'pid':pidno,
-						
-						},
-					   success:function(data) {
-						 // alert(data);
-						  if(data)
-						  {  
-						  
-						   
-						  setTimeout(function(){ 
-							   $('.popup-gallery').removeClass('mfg-hide'); 
-							   $('.popup-gallery').html(data);
-							   $('.popup-gallery a').trigger('click');
-							   $('.loder').css('display','none'); 
-						  },1500);
-							  
-						  // alert(55);
-						  }
-						}
-					
-				}); 
-	      }
-*/
-
-
 </script>
 
 <div id="primary" class="content-area">
@@ -172,7 +114,6 @@ jQuery(document).ready(function($) {
             <h2><?php echo get_field('praise_for_poornima_title');?></h2>
              <ul>
             <?php 
-                //testimonial on home page
                  $select_testimonial = get_field('select_testimonial'); 
 				 $i=0;
                 foreach($select_testimonial  as $select_testimonia)
@@ -183,7 +124,7 @@ jQuery(document).ready(function($) {
                             });
                          </script>
             <li class="testmlist "><p class="row<?php echo $i; ?>"><i class="fa-left-quote"></i><span><?php echo $select_testimonia->post_content; ?></span><i class="fa-right-quote"></i></p> <div class="test-details"> <?php echo get_the_post_thumbnail($select_testimonia->ID,array(100,107)); ?> <div class="test-name"><strong><?php echo $select_testimonia->post_title;?></strong> <?php echo get_field('position',$select_testimonia->ID);?></div></div> </li>
-            <?php // $i++;  	
+            <?php  	
 			}
                 ?>
                 
@@ -210,7 +151,6 @@ jQuery(document).ready(function($) {
 				$video_url =  get_field('video_url',$pid );
 				$video_url =  get_field('slider',$pid );
 			?>
-				<?php //print_r($upcoming_even);?>
                <?php if($event_link)
 					       {?>
                               <li><a href="<?php echo $event_link; ?>"><?php echo $title; ?></a> <span><?php if ($time) { echo $date . ', ' . $time; } else { echo $date; } ?></span> <p><?php echo $location; ?></p></li>
@@ -243,7 +183,6 @@ jQuery(document).ready(function($) {
 			{
 				$cat_name = $previous_even->name;
 				$term_id = $previous_even->term_id;
-				//print_r($previous_even);
 				echo '<h4>'.$cat_name.'</h4>';
 				 query_posts(array( 
 						'post_type' => 'event',
@@ -321,18 +260,6 @@ jQuery(document).ready(function($) {
        </div>
        </div>
      
-        
-        
-        
-        
-        
-        
-        
- 
-    
-    <?php // comments_template();
-	//the_content(); 
-	 ?>
     <?php endwhile; ?>
   </div>
   <!-- #content --> 

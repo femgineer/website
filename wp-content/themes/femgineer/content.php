@@ -31,21 +31,20 @@
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
-		<?php endif; // is_single() ?>
+		<?php endif; ?>
 
 		<div class="entry-meta">
 			<?php twentythirteen_entry_meta(); ?>
 			<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 
-	<?php if ( is_search() && !is_single()) : // Only display Excerpts for Search ?>
+	<?php if ( is_search() && !is_single()) : ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
 		<?php
-		//the_excerpt();
 			/* translators: %s: Name of current post */
 		the_content( sprintf(
 				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'twentythirteen' ),
@@ -64,7 +63,7 @@
 			<div class="comments-link">
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
 			</div><!-- .comments-link -->
-		<?php endif; // comments_open() ?>
+		<?php endif; ?>
 
 		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 			<?php get_template_part( 'author-bio' ); ?>
