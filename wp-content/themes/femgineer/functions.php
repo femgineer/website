@@ -903,3 +903,16 @@ function get_sliderpopup()
 }
 add_action("wp_ajax_nopriv_get_sliderpopup", "get_sliderpopup");
 add_action("wp_ajax_get_sliderpopup", "get_sliderpopup");
+
+function femgineer_show_category_form($content)
+{
+	$out = '';
+
+	if (has_category('present')) {
+		$out = '<div class="present-book"><div class="block"> <div class="area"> <h1>Present With Conﬁdence &amp; Catapult Your Career</h1> <p>Overcome your public speaking fears and learn how to give talks that lead to new opportunities.</p><form class="form-email" action="http://femgineer.us6.list-manage1.com/subscribe/post?u=21e8e255f2ac03e542d1abcaa&amp;id=4739f55e60" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" method="post"> <button class="btn-primary" type="submit">Send a sample chapter</button> <div class="input-group"> <input id="mce-email-horizontal" name="EMAIL" type="email" placeholder="Email address"> </div></form><div class="img-area"><img src="http://femgineer.com/present-book/images/img2.jpg" alt="Present With Conﬁdence &amp; Catapult Your Career"></div></div> </div></div>';
+	}
+
+	return "{$content}{$out}";
+}
+
+add_filter('the_content', 'femgineer_show_category_form', 0);

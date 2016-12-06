@@ -1995,3 +1995,206 @@ footer a[rel="bookmark"]:link:after, footer a[rel="bookmark"]:visited:after { co
 .comment-respond .form-submit { margin: 40px 0 }
 .comentbox { width: 100%; margin: 0; }
 .comment-respond h3 { margin: 30px 0; color: #7c4e8c; font-family: 'NexaBold'; font-size: 24px; font-style: normal; text-transform: uppercase; }
+
+.present-book {
+ margin-top: 40px;
+ margin-bottom: 40px;
+ display: inline-block;
+}
+.present-book .block {
+ font-size: 15px;
+ line-height: 19px;
+ overflow: hidden;
+ background: #fff;
+ text-align: left;
+ border: 4px solid #019192;
+ padding: 20px;
+ max-height: 100%;
+}
+
+.present-book .block .area {
+ overflow: hidden;
+ padding: 0 0 15px;
+}
+
+.present-book .block .area .img-area {
+ width: 100px;
+ margin: 2px 15px 0 0;
+}
+
+.present-book .block .area .img-area img {
+ max-width: 100%;
+ display: block;
+ height: auto;
+}
+
+.present-book .block p {
+ margin: 0 0 15px;
+}
+
+.present-book .block p:last-child {
+ margin: 0;
+}
+
+.present-book .block h1 {
+ font-size: 20px;
+ line-height: 26px;
+ margin: 0 0 12px;
+ color: #424242;
+ text-transform: capitalize;
+}
+
+.present-book .block .form-email {
+ overflow: hidden;
+ display: table;
+ table-layout: fixed;
+ width: 100%;
+}
+
+.present-book .block .form-email .btn-primary {
+ display: block;
+ width: 100%;
+}
+
+.present-book .block .form-email .input-group {
+ display: table-header-group;
+}
+
+.present-book .block .form-email input[type="email"] {
+ width: 100%;
+ height: 40px;
+ font-size: 14px;
+ line-height: 18px;
+ font-weight: 600;
+ font: 600 14px/18px "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+ background: #eee;
+ border: 1px solid #bcbcbc;
+ border-radius: 3px;
+ outline: none !important;
+ padding: 9px 10px;
+ margin: 0 0 10px;
+ box-shadow: none;
+ color: #848484;
+}
+
+.present-book .block .form-email input[type="email"]::-webkit-input-placeholder {
+ color: #848484;
+}
+
+.present-book .block .form-email input[type="email"]::-moz-placeholder {
+ opacity: 1;
+ color: #848484;
+}
+
+.present-book .block .form-email input[type="email"]:-moz-placeholder {
+ color: #848484;
+}
+
+.present-book .block .form-email input[type="email"]:-ms-input-placeholder {
+ color: #848484;
+}
+
+.present-book .block .form-email input[type="email"].placeholder {
+ color: #848484;
+}
+
+.present-book .block .btn-primary {
+ display: inline-block;
+ vertical-align: top;
+ padding: 10px 10px 11px;
+ border: 0;
+ text-align: center;
+ text-decoration: none;
+ background: #019192;
+ color: #fff;
+ border-radius: 2px;
+}
+
+.present-book .block .btn-primary:hover {
+ background: #015f5f;
+}
+
+@media (min-width: 480px) {
+ .present-book .block .form-email {
+  display: block;
+  width: 80%;
+  table-layout: inherit;
+  float: right;
+ }
+
+ .present-book .block .form-email .btn-primary {
+  float: right;
+  margin: 0 0 0 14px;
+  width: auto;
+ }
+
+ .present-book .block .form-email .input-group {
+  display: block;
+  overflow: hidden;
+ }
+
+ .present-book .block .form-email input[type="email"] {
+  margin: 0;
+ }
+}
+
+@media (min-width: 768px) {
+ .present-book .block {
+  width: 100%;
+ }
+
+ .present-book .block h1 {
+  width: 80%;
+  float: right;
+  font-size: 25px;
+  line-height: 31px;
+ }
+
+ .present-book .block p {
+  width: 80%;
+  float: right;
+ }
+
+ .present-book .block .form-email input[type="email"] {
+  padding: 8px 10px;
+ }
+}
+
+@media (min-width: 1010px) {
+ .present-book .block {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 30px;
+ }
+
+ .present-book .block .area {
+  padding: 0;
+ }
+
+ .present-book .block .area .img-area {
+  width: 131px;
+  margin: 3px 29px 0 0;
+ }
+
+ .present-book .block p {
+  margin: 0 0 30px;
+ }
+
+ .present-book .block h1 {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 0 0 30px 0;
+  letter-spacing: -.5px;
+ }
+
+ .present-book .block .form-email .btn-primary {
+  padding: 12px 12px 14px;
+ }
+
+ .present-book .block .form-email input[type="email"] {
+  font-size: 19px;
+  line-height: 22px;
+  padding: 11px 15px 12px;
+  height: 50px;
+ }
+}
