@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-var PathConfig = require('./grunt-settings.js');
+  var PathConfig = require('./grunt-settings.js');
 
   // tasks
   grunt.initConfig({
@@ -392,8 +392,4 @@ var PathConfig = require('./grunt-settings.js');
 
   //final build
   grunt.registerTask('dist', ['clean:temp', 'imgmin', 'cssbeauty']);
-
 };
-
-
-
