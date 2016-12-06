@@ -1,0 +1,70 @@
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  @extend %clearfix;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.two-column,
+.threecolumn {
+  font-size:0;
+  line-height:0;
+  letter-spacing: -4px;
+  margin: 0 -20px;
+  text-align: center;
+
+  .column {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    padding: 0 20px;
+    display:inline-block;
+    vertical-align:top;
+    width: 100%;
+
+    @include media('>=tablet') {
+      width: 50%;
+    }
+  }
+}
+
+.threecolumn {
+  .column {
+    width: 100%;
+
+    @include media('>=tablet') {
+      width: 33.33%;
+    }
+  }
+}
+
+.btn{
+  background: $purple;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $white;
+  display:inline-block;
+  vertical-align:top;
+  text-decoration: none;
+  transition: background 0.2s linear;
+  
+  &:hover{
+    background: #481c57;
+  }
+}
+
+blockquote{
+  margin: 0;
+  
+  q{
+    quotes: none;
+  }
+}

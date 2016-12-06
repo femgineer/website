@@ -1,0 +1,1837 @@
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.container {
+	@extend %clearfix;
+	max-width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.js-tab-hidden {
+	display: block !important;
+	left: -9999px !important;
+	position: absolute !important;
+	top: -9999px !important;
+}
+.intro {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	.container {
+		max-width: 987px;
+	}
+	.caption {
+		@include v-align;
+		
+
+		min-height: 480px;
+	@include media('>=tablet') {
+		min-height: 500px;
+	}
+	@include media('>=desktop') {
+		min-height: 633px;
+	}
+		&:after {
+			min-height: inherit;
+		}
+		.caption-holder {
+			width: 100%;
+			padding: 75px 0 20px;
+		}
+	}
+	.block {
+		@include fontsize(15, 19);
+		overflow: hidden;
+		background: $white;
+		text-align: left;
+		border: 4px solid $green;
+		padding: 20px;
+		max-height: 100%;
+		@include media('>=tablet') {
+			width: 67.5%;
+			float: right;
+		}
+		@include media('>=desktop') {
+			@include fontsize(18, 24);
+			padding: 26px 25px 32px 29px;
+		}
+		.area {
+			overflow: hidden;
+			padding: 0 0 15px;
+			@include media('>=desktop') {
+				padding: 0 0 23px;
+			}
+			.img-area {
+				float: left;
+				width: 100px;
+				margin: 2px 15px 0 0;
+				@include media('>=desktop') {
+					width: 131px;
+					margin: 3px 29px 0 0;
+				}
+				img {
+					@include img-responsive;
+				}
+			}
+		}
+		p {
+			margin: 0 0 15px;
+			@include media('>=desktop') {
+				margin: 0 0 27px;
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+		h1 {
+			@include fontsize(20, 26);
+			margin: 0 0 12px;
+			color: $gray-dark;
+			text-transform: capitalize;
+			@include media('>=tablet') {
+				@include fontsize(25, 31);
+			}
+			@include media('>=desktop') {
+				@include fontsize(30, 38);
+				margin: 0 0 20px;
+				letter-spacing: -.5px;
+			}
+		}
+		.form-email {
+			overflow: hidden;
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			@include media('>=phone') {
+				display: block;
+				width: auto;
+				table-layout: inherit;
+			}
+			.btn-primary {
+				display: block;
+				width: 100%;
+				@include media('>=phone') {
+					float: right;
+					margin: 0 0 0 14px;
+					width: auto;
+				}
+				@include media('>=desktop') {
+					padding: 12px 12px 14px;
+				}
+			}
+			.input-group {
+				display: table-header-group;
+				@include media('>=phone') {
+					display: block;
+					overflow: hidden;
+				}
+			}
+			input[type="email"] {
+				@include size(100%, 40px);
+				@include font(14, 18, $semibold);
+				font: $semibold 14px/18px $opensans;
+				background: #eee;
+				border: 1px solid #bcbcbc;
+				border-radius: 3px;
+				outline: none !important;
+				padding: 9px 10px;
+				margin: 0 0 10px;
+				box-shadow: none;
+				color: $gray;
+				@include placeholder {
+					color: $gray;
+				}
+				@include media('>=phone') {
+					margin: 0;
+				}
+				@include media('>=tablet') {
+					padding: 8px 10px;
+				}
+				@include media('>=desktop') {
+					@include fontsize(19, 22);
+					padding: 11px 15px 12px;
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+#main {
+	@extend %clearfix;
+	position: relative;
+}
+ul {
+	@extend %listreset;
+	overflow: hidden;
+	margin: 0 0 5px;
+	@include media('>=desktop') {
+		margin: 0 0 11px;
+	}
+	li {
+		overflow: hidden;
+		position: relative;
+		padding: 0 0 0 20px;
+		margin: 0 0 4px;
+		@include media('>=desktop') {
+			padding: 0 0 0 25px;
+			margin: 0 0 7px;
+		}
+		&:last-child {
+			margin: 0;
+		}
+		&:before {
+			@include absolute(10px, 3px);
+			@include size(5px);
+			content: "";
+			border-radius: 50%;
+			background: $black;
+			@include media('>=tablet') {
+				top: 9px;
+			}
+			@include media('>=desktop') {
+				top: 13px;
+			}
+		}
+	}
+}
+.text-block {
+	@include fontsize(16, 24);
+	overflow: hidden;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		@include fontsize(19, 28);
+		padding: 35px 0;
+	}
+	@include media('>=desktop') {
+		@include fontsize(22, 33);
+		padding: 52px 0;
+		max-width: 683px;
+		letter-spacing: -.5px;
+	}
+	ul {
+		@include media('>=desktop') {
+			margin-top: -17px;
+		}
+	}
+	h2 {
+		@include fontsize(16, 24);
+		margin: 0 0 15px;
+		@include media('>=tablet') {
+			@include fontsize(19, 27);
+			margin: 0 0 25px;
+		}
+		@include media('>=desktop') {
+			@include fontsize(22, 33);
+			margin: 0 0 33px;
+			letter-spacing: -.5px;
+		}
+	}
+	p {
+		margin: 0 0 15px;
+		@include media('>=tablet') {
+			margin: 0 0 25px;
+		}
+		@include media('>=desktop') {
+			margin: 0 0 33px;
+		}
+	}
+}
+.box-options {
+	@extend %clearfix;
+	position: relative;
+	z-index: 50;
+	padding: 30px 0;
+	text-align: center;
+	color: $white;
+	@include media('>=tablet') {
+		padding: 50px 0;
+	}
+	@include media('>=desktop') {
+		padding: 87px 0 68px;
+	}
+	&:after {
+		@include absolute(0, -9999px, -9999px, 0);
+		background: $green;
+		content: "";
+		z-index: -1;
+	}
+	h2 {
+		@include fontsize(18, 22);
+		margin: 0 0 15px;
+		@include media('>=tablet') {
+			@include fontsize(22, 29);
+		}
+		@include media('>=desktop') {
+			@include fontsize(27, 33);
+			margin: 0 0 22px;
+		}
+	}
+	ul {
+		@include fontsize(17, 21);
+		overflow: hidden;
+		@include media('>=tablet') {
+			@include fontsize(22, 28);
+		}
+		@include media('>=desktop') {
+			@include fontsize(26, 32);
+		}
+		li {
+			overflow: hidden;
+			padding: 20px 0 0;
+			margin: 0;
+			letter-spacing: -.32em;
+			@include media('>=desktop') {
+				padding: 35px 0 9px;
+			}
+			> * {
+				letter-spacing: 0;
+			}
+			&:before {
+				display: none;
+			}
+			.title {
+				@include inline(top);
+				text-transform: uppercase;
+				padding: 0 10px 0 0;
+				@include media('>=desktop') {
+					padding: 0 47px 0 0;
+				}
+			}
+			.text {
+				@include inline(top);
+			}
+		}
+	}
+}
+.head {
+	@include inline(top);
+	text-align: center;
+	color: #a9a9a9;
+	margin: 0 auto 20px;
+	width: 100%;
+	@include media('>=phone') {
+		max-width: 80%;
+		width: auto;
+		display: block;
+		overflow: hidden;
+	}
+	@include media('>=tablet') {
+		margin-bottom: 35px;
+	}
+	@include media('>=desktop') {
+		margin-bottom: 66px;
+		max-width: 73%;
+	}
+	h1 {
+		color: $green-light;
+		margin: 0;
+		@include media('>=desktop') {
+			margin: 0 0 31px;
+		}
+		br {
+			display: none;
+			@include media('>=desktop') {
+				display: block;
+			}
+		}
+	}
+	p {
+		@include font(15, 23, $semibold);
+		margin: 0;
+		overflow: hidden;
+		@include media('>=desktop') {
+			@include fontsize(20, 31);
+			letter-spacing: -.5px;
+		}
+	}
+}
+.presentation {
+	overflow: hidden;
+	padding: 30px 0 60px;
+	position: relative;
+	z-index: 60;
+	@include media('>=tablet') {
+		padding: 80px 0 140px;
+		&:after {
+			@include absolute(auto, 50%, auto, 0);
+			@include size(60px);
+			background: $green;
+			border-radius: 50%;
+			margin: 0 0 -45px -30px;
+			content: "";
+			z-index: 50;
+		}
+	}
+	@include media('>=desktop') {
+		padding: 116px 0 239px;
+		&:after {
+			@include size(87px);
+			margin: 0 0 -63px -43px;
+		}
+	}
+	.steps {
+		@extend %clearfix;
+		position: relative;
+		text-align: center;
+		z-index: 50;
+		@include media('>=tablet') {
+			text-align: left;
+			&:after {
+				@include absolute(0, 50%, auto, -9999px);
+				background: #ababab;
+				width: 1px;
+				display: block;
+			}
+			&:before {
+				@include absolute(0, 50%);
+				@include size(13px);
+				border-radius: 50%;
+				display: block;
+				margin: -6px 0 0 -6px;
+				content: "";
+				z-index: 1;
+				background: #c1c1c1;
+			}
+		}
+		.step {
+			display: table;
+			table-layout: fixed;
+			border-top: 1px solid #ebebeb;
+			position: relative;
+			letter-spacing: -.32em;
+			max-width: 500px;
+			padding: 50px 0 0;
+			margin: 40px auto 0;
+			@include media('>=tablet') {
+				margin: 0;
+				max-width: inherit;
+				border: 0;
+				padding: 35px 0;
+				flex-wrap: nowrap;
+				table-layout: inherit;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+			}
+			@include media('>=desktop') {
+				padding: 79px 0 82px;
+			}
+			> * {
+				letter-spacing: 0;
+			}
+			.img-area {
+				display: table-header-group;
+				height: 1%;
+				overflow: hidden;
+				@include media('>=tablet') {
+					width: 41.5%;
+					@include inline(top);
+					margin: 0;
+					height: auto;
+				}
+				img {
+					@include img-responsive;
+					@include inline(top);
+					border: 1px solid #d3d3d3;
+					margin: 0 0 20px;
+					@include media('>=tablet') {
+						margin: 0;
+					}
+				}
+			}
+		}
+		.icon-area {
+			@include size(60px);
+			@include absolute(0, 50%);
+			background: $green;
+			border-radius: 50%;
+			color: $white;
+			text-align: center;
+			z-index: 10;
+			margin: -30px 0 0 -30px;
+			@include media('>=tablet') {
+				top: 50%;
+			}
+			@include media('>=desktop') {
+				@include size(87px);
+				margin: -43px 0 0 -43px;
+			}
+			i {
+				@include fontsize(30, 59);
+				&.icon-talk {
+					font-size: 25px;
+				}
+				&.icon-star {
+					font-size: 26px;
+				}
+				@include media('>=desktop') {
+					@include fontsize(41, 87);
+					&.icon-talk {
+						font-size: 35px;
+					}
+					&.icon-star {
+						font-size: 37px;
+					}
+				}
+			}
+		}
+		.text-box {
+			overflow: hidden;
+			@include media('>=tablet') {
+				@include inline;
+				width: 41.2%;
+			}
+			p {
+				font-weight: $light;
+				font-family: $opensans;
+				margin: 0 0 10px;
+			}
+			h2 {
+				margin: 0 0 7px;
+				color: $gray-dark;
+				@include media('>=desktop') {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+.quotes {
+	@extend %clearfix;
+	position: relative;
+	z-index: 70;
+	padding: 20px 0;
+	color: $white;
+	text-align: center;
+	@include media('>=tablet') {
+		padding: 35px 0;
+		text-align: left;
+	}
+	@include media('>=desktop') {
+		padding: 73px 0 36px;
+	}
+	&:before {
+		@include absolute(-1px, -9999px, -9999px, 0);
+		background: $green;
+		z-index: -1;
+		content: "";
+	}
+	.head {
+		margin-bottom: 16px;
+	}
+	h1 {
+		color: $white;
+		@include media('>=desktop') {
+			@include fontsize(39, 46);
+		}
+	}
+	.quotes-holder {
+		overflow: hidden;
+		letter-spacing: -.32em;
+		margin: 0 -15px;
+		@include media('>=tablet') {
+			margin: 0 -20px;
+		}
+		@include media('>=desktop') {
+			margin: 0 -36px;
+		}
+		blockquote {
+			overflow: hidden;
+			color: $white;
+			letter-spacing: 0;
+			margin: 0;
+			padding: 10px 15px;
+			@include media('>=tablet') {
+				@include inline(top);
+				width: 33.33%;
+				padding: 0 20px 20px;
+			}
+			@include media('>=desktop') {
+				padding: 0 36px 20px;
+			}
+			img {
+				@include size(80px);
+				margin: 0 auto 15px;
+				border-radius: 50%;
+				display: block;
+				@include media('>=desktop') {
+					margin-bottom: 22px;
+				}
+			}
+			q {
+				font: $semibold 15px/24px $opensans;
+				margin: 0 0 15px;
+				display: block;
+				quotes: none;
+				@include media('>=tablet') {
+					margin: 0 0 23px;
+				}
+				@include media('>=desktop') {
+					@include fontsize(20, 35);
+					margin: 0 0 34px;
+					letter-spacing: -.5px;
+				}
+				@include media('<tablet') {
+					height: auto !important;
+				}
+			}
+			cite {
+				display: block;
+				border-top: 1px solid #087273;
+				padding: 15px 0 0;
+				color: #016364;
+				line-height: 18px;
+				@include media('>=desktop') {
+					padding: 21px 0 0;
+					font-size: 15px;
+					line-height: 22px;
+				}
+				.name {
+					display: block;
+					text-transform: capitalize;
+					font-style: normal;
+				}
+				.designation {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.personalities {
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 35px 0;
+	}
+	@include media('>=desktop') {
+		padding: 117px 0 87px;
+	}
+	.holder {
+		overflow: hidden;
+		padding: 20px 0;
+		@include media('>=desktop') {
+			padding: 36px 0;
+			margin: 0 -7px;
+		}
+	}
+	.personality {
+		background: #f6f6f6;
+		overflow: hidden;
+		margin: 0 0 15px;
+		@include media('>=tablet') {
+			float: left;
+			margin: 0 15px 15px;
+			width: calc(50% - 30px);
+		}
+		@include media('>=desktop') {
+			margin: 0 27px 27px;
+			width: calc(50% - 54px);
+		}
+		.img-area {
+			overflow: hidden;
+			img {
+				width: 100%;
+				display: block;
+				height: auto;
+			}
+		}
+		.text-box {
+			overflow: hidden;
+			padding: 20px 20px 10px;
+			@include media('>=desktop') {
+				padding: 27px 32px 17px;
+			}
+		}
+		h2 {
+			@include fontsize(17, 21);
+			margin: 0 0 15px;
+			color: $gray-dark;
+			@include media('>=desktop') {
+				@include fontsize(22, 27);
+				margin: 0 0 25px;
+			}
+		}
+		p {
+			font-family: $helvetica;
+			margin: 0 0 15px;
+			@include media('>=desktop') {
+				@include fontsize(15, 26);
+				margin: 0 0 25px;
+			}
+		}
+		.link {
+			color: #222;
+			text-decoration: underline;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}
+.companies {
+	overflow: hidden;
+	padding: 20px 0 0;
+	text-align: center;
+	@include media('>=desktop') {
+		padding: 31px 0 0;
+	}
+	h3 {
+		@include font(15, 21);
+		color: #adadad;
+		margin: 0 0 20px;
+		text-transform: uppercase;
+		@include media('>=desktop') {
+			@include fontsize(18, 24);
+			margin: 0 0 33px;
+		}
+	}
+	ul {
+		@extend %listreset;
+		letter-spacing: -.32em;
+		margin: 0 -10px;
+		@include media('>=tablet') {
+			margin: 0 -27px;
+		}
+		li {
+			@include inline;
+			letter-spacing: 0;
+			max-width: 100%;
+			padding: 10px;
+			margin: 0;
+			&:before {
+				display: none;
+			}
+			@include media('>=desktop') {
+				padding: 20px 27px;
+			}
+			img {
+				@include img-responsive;
+			}
+		}
+	}
+}
+.section-video {
+	@extend %clearfix;
+	z-index: 50;
+	position: relative;
+	padding: 20px 0;
+	color: $white;
+	@include media('>=tablet') {
+		padding: 35px 0;
+	}
+	@include media('>=desktop') {
+		padding: 102px 0 94px 10px;
+	}
+	&:before {
+		@include absolute(0, -9999px, -9999px, 0);
+		content: "";
+		background: #313131;
+		z-index: -1;
+	}
+	.text-box {
+		@include fontsize(15, 22);
+		overflow: hidden;
+		padding: 0 0 20px;
+		@include media('>=tablet') {
+			float: left;
+			width: 41.8%;
+			padding: 0 15px 0 0;
+		}
+		@include media('>=desktop') {
+			@include fontsize(20, 32);
+		}
+		h1 {
+			@include media('>=desktop') {
+				margin: 0 0 41px;
+			}
+		}
+		p {
+			margin: 0 0 20px;
+			@include media('>=tablet') {
+				margin: 0 0 25px;
+			}
+			@include media('>=desktop') {
+				margin: 0 0 35px;
+			}
+		}
+		.btn-default {
+			font-weight: $semibold;
+			text-transform: uppercase;
+			padding: 12px 17px 14px;
+			margin: 12px 0 0;
+			@include media('>=desktop') {
+				margin: 24px 0 0;
+			}
+		}
+	}
+	.video {
+		overflow: hidden;
+		@include media('>=tablet') {
+			float: right;
+			width: 55.2%;
+			padding: 25px 0 0 15px;
+		}
+		@include media('>=desktop') {
+			padding-top: 49px;
+		}
+		iframe {
+			border: 0;
+			margin: 0;
+			display: block;
+		}
+	}
+}
+.lesson-details {
+	overflow: hidden;
+	position: relative;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 35px 0 50px;
+		&:after {
+			@include absolute(0, 35%, auto, -9999px);
+			content: "";
+			width: 1px;
+			background: #979797;
+		}
+	}
+	@include media('>=desktop') {
+		padding: 91px 0 116px;
+		&:after {
+			left: 33.5%;
+		}
+	}
+	.tabset-main {
+		@extend %clearfix;
+		padding: 0 0 20px;
+		@include media('>=tablet') {
+			float: left;
+			width: 35%;
+			padding: 0 10px 0 0;
+		}
+		@include media('>=desktop') {
+			width: 33.5%;
+		}
+		h1 {
+			color: $black;
+			@include media('>=desktop') {
+				margin: 0 0 48px;
+			}
+		}
+		.tabset {
+			overflow: hidden;
+			position: relative;
+			border-bottom: 1px solid #979797;
+			padding: 0 0 30px;
+			@include media('>=tablet') {
+				padding: 0;
+				border: 0;
+			}
+			li {
+				overflow: hidden;
+				position: static;
+				padding: 0;
+				width: 14.2%;
+				text-align: center;
+				float: left;
+				@include media('>=tablet') {
+					width: auto;
+					margin: 30px 0 0;
+					text-align: left;
+					float: none;
+					&:first-child {
+						margin: 0;
+					}
+				}
+				@include media('>=desktop') {
+					margin: 40px 0 0;
+				}
+				&:first-child {
+					margin: 0;
+				}
+				&:before {
+					display: none;
+				}
+				&.active a,
+				&.active a i {
+					color: $green;
+					.text {
+						display: block;
+					}
+				}
+				a {
+					@include inline(top);
+					padding: 5px 0;
+					font-weight: $semibold;
+					text-decoration: none;
+					color: #777;
+					@include media('>=tablet') {
+						position: relative;
+						padding: 0 0 0 42px;
+					}
+					@include media('>=desktop') {
+						@include fontsize(15, 19);
+					}
+					&:hover,
+					&:hover i {
+						color: $green;
+					}
+					.text {
+						@include absolute(auto, 0, 0, 20px);
+						@extend .ellipsis;
+						display: none;
+						@include media('>=tablet') {
+							display: block;
+							position: static;
+						}
+					}
+					i {
+						@include fontsize(20, 20);
+						@include inline(top);
+						color: #333;
+						transition: color 0.25s ease-in-out;
+						margin: 0 0 22px;
+						@include media('>=tablet') {
+							@include absolute(4px, 0);
+							@include fontsize(21, 25);
+							margin: 0;
+							text-align: center;
+							width: 28px;
+							&.icon-idea {
+								font-size: 25px;
+							}
+							&.icon-talk {
+								top: 5px;
+							}
+							&.icon-formats {
+								font-size: 26px;
+								line-height: 26px;
+							}
+						}
+						@include media('>=desktop') {
+							@include fontsize(23, 25);
+							&.icon-talk {
+								top: 7px;
+							}
+						}
+					}
+					.title {
+						@include fontsize(12, 15);
+						margin: 0 10px 0 0;
+						text-transform: uppercase;
+						@include media('>=tablet') {
+							display: block;
+							margin: 0;
+						}
+						@include media('>=desktop') {
+							@include fontsize(13, 16);
+						}
+					}
+				}
+			}
+		}
+	}
+	.tab-content {
+		overflow: hidden;
+		@include media('>=tablet') {
+			padding: 0 0 0 15px;
+		}
+		@include media('>=desktop') {
+			padding: 0 0 0 38px;
+		}
+		h2 {
+			@include fontsize(21, 28);
+			margin: 0 0 20px;
+			color: $green;
+			@include media('>=tablet') {
+				@include fontsize(28, 35);
+			}
+			@include media('>=desktop') {
+				@include fontsize(35, 51);
+				margin: 0 0 22px;
+			}
+		}
+		.img-area {
+			overflow: hidden;
+			margin: 0 0 20px;
+			@include media('>=desktop') {
+				margin: 0 0 30px;
+			}
+			img {
+				@include img-responsive;
+				margin: 0 auto;
+			}
+		}
+		h3 {
+			@include fontsize(15, 22);
+			text-transform: uppercase;
+			color: #a5a5a5;
+			margin: 0 0 3px;
+		}
+		p {
+			font-family: $helvetica;
+			margin: 0 0 20px;
+			line-height: 22px;
+			@include media('>=desktop') {
+				margin: 0 0 25px;
+				line-height: 28px;
+			}
+		}
+		.chapters {
+			overflow: hidden;
+			padding: 14px 0 0;
+			color: $gray-dark;
+			@include media('>=desktop') {
+				@include fontsize(17, 23);
+			}
+			h3 {
+				margin: 0;
+			}
+			.items-list {
+				overflow: hidden;
+				margin: 0;
+				padding: 0;
+				dt {
+					display: block;
+					margin: 0 0 2px;
+					font-weight: $semibold;
+				}
+				dd {
+					display: block;
+					margin: 0 0 15px;
+					@include media('>=desktop') {
+						margin: 0 0 27px;
+					}
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.quote-block {
+	@extend %clearfix;
+	position: relative;
+	z-index: 50;
+	text-align: center;
+	color: $white;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 35px 0;
+	}
+	@include media('>=desktop') {
+		padding: 89px 0 48px;
+	}
+	&:before {
+		@include absolute(0, -9999px, -9999px, 0);
+		background: $green;
+		content: "";
+		z-index: -1;
+	}
+	blockquote {
+		margin: 0;
+		q {
+			@include font(16, 30, $semibold);
+			display: block;
+			quotes: none;
+			margin: 0 0 20px;
+			@include media('>=tablet') {
+				@include fontsize(24, 40);
+				margin: 0 0 24px;
+			}
+			@include media('>=desktop') {
+				@include fontsize(31, 51);
+				margin: 0 0 33px;
+			}
+			.commas {
+				@include fontsize(34, 24);
+				margin: 0 6px 0 0;
+				position: relative;
+				top: 5px;
+				vertical-align: top;
+				&:last-child {
+					margin: 0 0 0 4px;
+				}
+				@include media('>=tablet') {
+					@include fontsize(40, 40);
+				}
+				@include media('>=desktop') {
+					@include fontsize(48, 42);
+				}
+			}
+		}
+		cite {
+			@include fontsize(15, 20);
+			display: block;
+			font-style: normal;
+			color: #016364;
+			@include media('>=desktop') {
+				@include fontsize(17, 22);
+			}
+			.designation,
+			.name {
+				display: block;
+				text-transform: capitalize;
+			}
+			.designation {
+				font-weight: $semibold;
+			}
+			img {
+				@include img-responsive;
+				margin: 20px auto 0;
+				@include media('>=desktop') {
+					margin: 35px auto 0;
+				}
+			}
+		}
+	}
+}
+.section-training {
+	@extend %clearfix;
+	padding: 20px 0;
+	position: relative;
+	z-index: 50;
+	&:before {
+		@include absolute(0, -9999px, -9999px, 0);
+		background: #fbfbfb;
+		content: "";
+		z-index: -1;
+	}
+	@include media('>=tablet') {
+		padding: 35px 0 15px;
+	}
+	@include media('>=desktop') {
+		padding: 96px 0 52px;
+	}
+	.holder {
+		overflow: hidden;
+		@include media('>=tablet') {
+			margin: 0 -15px;
+		}
+		@include media('>=desktop') {
+			margin: 0 -24px;
+			padding: 10px 0 0;
+		}
+	}
+	.trainer {
+		overflow: hidden;
+		border: 1px solid #979797;
+		background: $white;
+		color: #656565;
+		margin: 0 0 20px;
+		padding: 15px;
+		@include media('>=tablet') {
+			float: left;
+			width: calc(50% - 30px);
+			margin: 0 15px 20px;
+			padding: 25px;
+		}
+		@include media('>=desktop') {
+			@include fontsize(17, 23);
+			padding: 53px 25px 44px 35px;
+			margin: 0 24px 39px;
+			width: calc(50% - 48px);
+		}
+		.title {
+			@include font(14, 18, $semibold);
+			display: block;
+			text-transform: capitalize;
+			color: #717171;
+			margin: 0 0 8px;
+			@include media('>=desktop') {
+				@include fontsize(18, 22);
+				margin: 0 0 13px;
+			}
+		}
+		.heading {
+			overflow: hidden;
+			padding: 0 0 15px;
+			@include media('>=desktop') {
+				padding: 0 0 12px;
+			}
+		}
+		h2 {
+			margin: 0;
+			color: $gray-dark;
+			@include media('>=desktop') {
+				font-size: 24px;
+			}
+		}
+		p {
+			margin: 0 0 20px;
+			@include media('>=desktop') {
+				margin: 0 0 33px;
+			}
+		}
+		.meta {
+			overflow: hidden;
+			letter-spacing: -.32em;
+			color: #7d7d7d;
+			.img {
+				@include inline;
+				@include size(80px);
+				border-radius: 50%;
+				margin: 0 12px 0 0;
+			}
+			.info {
+				@include inline;
+				width: calc(100% - 92px);
+				letter-spacing: 0;
+				@include media('>=desktop') {
+					padding: 12px 0 0;
+				}
+				.name {
+					display: block;
+					margin: 0 0 2px;
+				}
+				.name {
+					margin: 0 0 2px;
+				}
+			}
+		}
+	}
+}
+.testimonials {
+	overflow: hidden;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 35px 20px 20px;
+	}
+	@include media('>=desktop') {
+		padding: 100px 38px 60px;
+	}
+	.testimonial {
+		overflow: hidden;
+		padding: 10px 0;
+		@include media('>=tablet') {
+			padding: 14px 0 35px;
+		}
+		@include media('>=desktop') {
+			padding: 14px 0 81px;
+		}
+		.text-box {
+			@include fontsize(15, 23);
+			overflow: hidden;
+			margin: 0 0 20px;
+			@include media('>=tablet') {
+				float: left;
+				margin: 0;
+				width: 50%;
+			}
+			@include media('>=desktop') {
+				@include fontsize(19, 30);
+			}
+			h2 {
+				margin: 0 0 15px;
+				@include media('>=tablet') {
+					margin: 0 0 22px;
+				}
+				@include media('>=desktop') {
+					margin: 0 0 28px;
+					line-height: 38px;
+				}
+			}
+			p {
+				margin: 0 0 12px;
+				@include media('>=tablet') {
+					margin: 0 0 18px;
+				}
+				@include media('>=desktop') {
+					margin: 0 0 23px;
+				}
+			}
+			.more {
+				@include inline(top);
+				@include media('>=desktop') {
+					@include fontsize(17, 21);
+				}
+			}
+		}
+		.bio {
+			@include fontsize(15, 20);
+			overflow: hidden;
+			text-align: center;
+			color: #585858;
+			@include media('>=tablet') {
+				float: right;
+				width: 37%;
+				padding: 4px 0
+			}
+			@include media('>=desktop') {
+				@include fontsize(18, 23);
+			}
+			img {
+				@include size(140px);
+				border-radius: 50%;
+				display: block;
+				margin: 0 auto 15px;
+				@include media('>=desktop') {
+					margin-bottom: 22px;
+				}
+			}
+			.name {
+				display: block;
+				margin: 0 0 10px;
+				@include media('>=desktop') {
+					margin: 0 0 20px;
+				}
+			}
+			.designation {
+				display: block;
+			}
+		}
+	}
+}
+.section-price {
+	@extend %clearfix;
+	position: relative;
+	z-index: 50;
+	text-align: center;
+	color: $white;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 35px 0;
+	}
+	@include media('>=desktop') {
+		padding: 46px 0 73px;
+	}
+	&:before {
+		@include absolute(162px, -9999px, -9999px, 0);
+		background: #303030;
+		content: "";
+		z-index: -1;
+	}
+	.img-area {
+		@include inline(top);
+		margin: 0 auto 20px;
+		width: 140px;
+		@include media('>=tablet') {
+			width: 168px;
+		}
+		@include media('>=desktop') {
+			margin: 0 0 32px;
+		}
+		img {
+			@include img-responsive;
+		}
+	}
+	.head {
+		@include media('>=desktop') {
+			margin-bottom: 49px;
+			max-width: 84%;
+		}
+		h1 {
+			color: $white;
+			@include media('>=desktop') {
+				line-height: 66px;
+			}
+		}
+	}
+	.packages {
+		overflow: hidden;
+		padding: 0 0 20px;
+		@include media('>=tablet') {
+			padding: 0 0 35px;
+			margin: 0 -10px;
+		}
+		@include media('>=desktop') {
+			padding: 0 0 40px;
+			margin: 0 -17px;
+		}
+		.package {
+			@extend %clearfix;
+			max-width: 290px;
+			margin: 0 auto 20px;
+			position: relative;
+			background: $white;
+			border: solid #979797;
+			border-width: 0 1px 1px;
+			padding: 0 18px 60px;
+			@include media('<tablet') {
+				height: auto !important;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			@include media('>=tablet') {
+				float: left;
+				width: calc(33.33% - 20px);
+				margin: 0 10px 20px;
+				padding-bottom: 70px;
+			}
+			@include media('>=desktop') {
+				width: calc(33.33% - 36px);
+				margin: 0 18px 25px;
+			}
+			&.basic {
+				.header,
+				.btn-primary {
+					background: #ef6618;
+				}
+				.info .text {
+					color: #f47c1d;
+				}
+				.btn-primary:hover {
+					background: darken(#ef6618, 10%);
+				}
+			}
+			&.pro {
+				.header,
+				.btn-primary {
+					background: #622a77;
+				}
+				.info .text {
+					color: #763e89;
+				}
+				.btn-primary:hover {
+					background: darken(#622a77, 10%);
+				}
+			}
+			.header {
+				overflow: hidden;
+				margin: 0 -19px;
+				background: $green;
+				color: $white;
+				padding: 20px 20px;
+				@include media('>=desktop') {
+					padding: 23px 20px 29px;
+				}
+				.subtitle {
+					@include fontsize(15, 18);
+					display: block;
+					text-transform: uppercase;
+					margin: 0 0 8px;
+					@include media('>=tablet') {
+						margin: 0 0 12px;
+					}
+					@include media('>=desktop') {
+						@include fontsize(20, 24);
+					}
+				}
+				.price {
+					@include fontsize(24, 30);
+					display: block;
+					@include media('>=tablet') {
+						@include fontsize(36, 40);
+					}
+					@include media('>=desktop') {
+						@include fontsize(48, 52);
+					}
+				}
+			}
+			.info {
+				overflow: hidden;
+				padding: 20px 0 0;
+				@include media('>=desktop') {
+					padding: 31px 0 0;
+				}
+				.text {
+					display: block;
+					padding: 0 0 20px;
+					color: $green-light;
+					border-bottom: 1px solid #979797;
+					@include media('>=desktop') {
+						font-size: 17px;
+						padding: 0 10px 24px;
+					}
+				}
+				.list {
+					padding: 20px 0 15px;
+					color: $gray-dark;
+					text-align: left;
+					margin: 0;
+					@include media('>=desktop') {
+						padding: 21px 15px;
+					}
+					li {
+						padding: 0 0 0 20px;
+						margin: 0;
+						@include media('>=desktop') {
+							padding: 0 0 0 27px;
+						}
+						&:before {
+							@include size(4px);
+							top: 8px;
+							@include media('>=desktop') {
+								top: 12px;
+							}
+						}
+					}
+				}
+			}
+			.btn-primary {
+				@include absolute(auto, 10px, 10px, 15px);
+				display: block;
+				@include media('>=desktop') {
+					padding: 16px 15px 14px;
+				}
+			}
+		}
+	}
+	.info-area {
+		overflow: hidden;
+		text-align: left;
+		@include media('>=desktop') {
+			padding: 15px 0;
+		}
+		.info {
+			overflow: hidden;
+			letter-spacing: -.32em;
+			+ .info {
+				padding: 20px 0 0;
+			}
+			> * {
+				letter-spacing: 0;
+			}
+			@include media('>=tablet') {
+				padding: 0 15px 0 0;
+				float: left;
+				max-width: 54%;
+				+ .info {
+					float: right;
+					max-width: 44%;
+					padding: 29px 0 0 15px;
+					h3 {
+						@include font(14, 18, $semibold);
+						margin: 0 0 6px;
+					}
+				}
+			}
+			@include media('>=desktop') {
+				max-width: 47%;
+			}
+			+ .info h3 {
+				@include media('>=desktop') {
+					font-size: 17px;
+					line-height: 22px;
+				}
+			}
+			.icon {
+				@include inline;
+				margin: 0 15px 0 0;
+				width: 68px;
+				@include media('>=tablet') {
+					margin: 0 30px 0 0;
+				}
+			}
+			.text-box {
+				@include inline;
+				width: calc(100% - 83px);
+				@include media('>=tablet') {
+					width: calc(100% - 98px);
+				}
+			}
+			h3 {
+				@include font(14, 20);
+				text-transform: capitalize;
+				margin: 0 0 5px;
+				@include media('>=desktop') {
+					@include fontsize(19, 24);
+				}
+			}
+			p {
+				font-family: $helvetica;
+				margin: 0;
+			}
+			.subtitle {
+				display: block;
+				margin: 0 0 10px;
+			}
+			.link {
+				text-decoration: underline;
+				color: $white;
+				@include media('>=desktop') {
+					font-size: 17px;
+				}
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
+.block-invite {
+	overflow: hidden;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 35px 0;
+	}
+	@include media('>=desktop') {
+		padding: 91px 19px;
+	}
+	.head {
+		@include media('>=desktop') {
+			margin-bottom: 52px;
+		}
+	}
+	.info {
+		@include fontsize(15, 22);
+		overflow: hidden;
+		padding: 0 0 20px;
+		@include media('>=tablet') {
+			padding: 0 0 30px;
+		}
+		@include media('>=desktop') {
+			@include fontsize(19, 28);
+			padding: 0 0 38px;
+		}
+		.title {
+			@include fontsize(14, 24);
+			display: block;
+			margin: 0 0 15px;
+			color: #585858;
+			text-transform: uppercase;
+			@include media('>=tablet') {
+				float: left;
+				width: 160px;
+				padding: 0 15px 0 0;
+			}
+			@include media('>=desktop') {
+				@include fontsize(17, 28);
+				width: 212px;
+			}
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		.holder {
+			overflow: hidden;
+		}
+	}
+	.btn-block {
+		overflow: hidden;
+		text-align: center;
+		@include media('>=tablet') {
+			padding: 20px 0 0;
+		}
+		@include media('>=desktop') {
+			padding: 31px 0 4px;
+		}
+	}
+	.btn-primary {
+		min-width: 250px;
+		@include media('>=desktop') {
+			@include fontsize(23, 27);
+			min-width: 355px;
+		}
+	}
+}
+.quotes-block {
+	@extend %clearfix;
+	position: relative;
+	z-index: 50;
+	padding: 0 0 5px;
+	@include media('>=desktop') {
+		margin: 0 -40px;
+	}
+	&:before {
+		@include absolute(0, -9999px, -9999px, 0);
+		content: "";
+		background: #f5f5f5;
+		z-index: -1;
+		display: block;
+		border-bottom: 5px solid $green;
+	}
+	.box {
+		@extend %clearfix;
+		position: relative;
+		padding: 20px 10px;
+		z-index: 50;
+		@include media('>=tablet') {
+			padding: 30px;
+			border-right: 1px solid #e1e1e1;
+			float: left;
+			width: 50%;
+			&:nth-child(even) {
+				border-right: 0;
+				border-left: 1px solid #e1e1e1;
+			}
+		}
+		@include media('>=desktop') {
+			padding: 48px 55px;
+		}
+		&:before {
+			@include absolute(0, -9999px, -9999px);
+			background: #ccc;
+			content: "";
+			z-index: -1;
+			height: 1px;
+		}
+		&.info {
+			color: $green-light;
+			text-align: center;
+			display: table;
+			table-layout: fixed;
+		}
+		blockquote {
+			margin: 0;
+		}
+		.brand-area {
+			@include v-align;
+			min-height: 95px;
+			margin: 0 0 20px;
+			@include media('>=desktop') {
+				margin: 0 0 30px;
+			}
+			&:after {
+				min-height: inherit;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.name {
+				@include fontsize(17, 21);
+				color: #979797;
+				@include media('>=desktop') {
+					@include fontsize(23, 29);
+				}
+			}
+			i {
+				@include fontsize(35, 35);
+				color: $green;
+				@include media('>=desktop') {
+					@include fontsize(52, 52);
+				}
+			}
+		}
+		.text {
+			display: block;
+			@include font(15, 24, $semibold);
+			margin: 0 0 20px;
+			color: $green-light;
+			@include media('>=desktop') {
+				@include fontsize(19, 31);
+				letter-spacing: -.5px;
+				margin: 0 0 31px;
+			}
+		}
+		.btn-block {
+			display: table-footer-group;
+		}
+		.btn-primary {
+			@include media('>=tablet') {
+				min-width: 260px;
+			}
+			@include media('>=desktop') {
+				@include fontsize(23, 28);
+				padding: 18px 20px 19px;
+				min-width: 355px;
+			}
+		}
+		q {
+			color: $gray-dark;
+			display: block;
+			quotes: none;
+			margin: 0 0 20px;
+			@include media('>=desktop') {
+				@include fontsize(17, 27);
+				margin: 0 0 38px;
+			}
+		}
+		cite {
+			color: #8b8b8b;
+			display: block;
+			font-style: normal;
+			@include media('>=desktop') {
+				@include fontsize(16, 20);
+				margin: 0 0 17px;
+			}
+			.name,
+			.designation {
+				display: block;
+				margin: 0 0 2px;
+				@include media('>=desktop') {
+					margin: 0 0 6px;
+				}
+			}
+			.designation {
+				@include fontsize(12, 18);
+				margin: 0;
+				@include media('>=desktop') {
+					@include fontsize(14, 20);
+				}
+			}
+		}
+	}
+}
+.sponsors {
+	overflow: hidden;
+	padding: 20px 0;
+	text-align: center;
+	@include media('>=tablet') {
+		padding: 35px 0;
+		text-align: left;
+		letter-spacing: -.32em;
+		> * {
+			letter-spacing: 0;
+		}
+	}
+	@include media('>=desktop') {
+		padding: 53px 18px 52px;
+	}
+	.img-area {
+		overflow: hidden;
+		width: 116px;
+		margin: 0 auto 20px;
+		@include media('>=tablet') {
+			@include inline;
+			margin: 0 15px 0 0;
+		}
+		@include media('>=desktop') {
+			margin: 0 56px 0 0;
+		}
+		img {
+			@include img-responsive;
+		}
+	}
+	.holder {
+		overflow: hidden;
+		@include media('>=tablet') {
+			@include inline;
+			width: calc(100% - 131px);
+		}
+		@include media('>=desktop') {
+			width: calc(100% - 172px);
+		}
+	}
+	h3 {
+		@include font(14, 18, $semibold);
+		color: $gray-dark;
+		margin: 0 0 10px;
+		@include media('>=desktop') {
+			@include fontsize(16, 20);
+			margin: 0 0 16px;
+		}
+	}
+	.sponsors-list {
+		@extend %listreset;
+		margin: 0 -8px;
+		letter-spacing: -.32em;
+		@include media('>=desktop') {
+			margin: 0 -19px;
+		}
+		li {
+			@include inline;
+			padding: 4px 8px;
+			max-width: 100%;
+			letter-spacing: 0;
+			@include media('>=desktop') {
+				padding: 4px 19px;
+			}
+			&:before {
+				display: none;
+			}
+			img {
+				@include img-responsive;
+			}
+		}
+	}
+}

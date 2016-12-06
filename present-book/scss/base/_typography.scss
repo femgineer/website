@@ -1,0 +1,123 @@
+// Typography
+body {
+	line-height: 20px;
+	@include media('>=desktop') {
+		@include fontsize(16, 24);
+	}
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h {
+	font-family: $headings-font-family;
+	font-weight: 700;
+	margin: 0 0 0.5em;
+	color: $headings-color;
+}
+
+h1,
+.h1 {
+	font-size: $h1-font-size;
+	line-height: 30px;
+	@include media('>=tablet') {
+		@include fontsize(32, 40);
+	}
+	@include media('>=desktop') {
+		@include fontsize(43, 54);
+		letter-spacing: -1px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: $h2-font-size;
+	line-height: 24px;
+	@include media('>=tablet') {
+		@include fontsize(21, 26);
+	}
+	@include media('>=desktop') {
+		@include fontsize(23, 29);
+		letter-spacing: -0.5px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+	font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+	font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+	font-size: $h6-font-size;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a,
+button {
+	color: $base-link-color;
+	transition: 0.25s ease-in-out;
+	transition-property: opacity, color, background;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+.btn-default {
+	@include font(16, 20, $bold);
+	@include inline(top);
+	background: none;
+	border: 2px solid $white;
+	padding: 2px 10px 4px;
+	min-width: 115px;
+	text-decoration: none;
+	color: $white;
+	text-align: center;
+	border-radius: 2px;
+	text-transform: capitalize;
+	&:hover {
+		background: $white;
+		color: $green;
+	}
+}
+.btn-primary {
+	@include inline(top);
+	@include font(16, 20, $bold);
+	padding: 10px 10px 11px;
+	border: 0;
+	text-align: center;
+	text-decoration: none;
+	background: $green;
+	color: $white;
+	border-radius: 2px;
+	@include media('>=desktop') {
+		@include fontsize(20, 24);
+		padding: 12px 15px 14px;
+		letter-spacing: -.5px;
+	}
+	&:hover {
+		background: darken($green, 10%);
+	}
+}

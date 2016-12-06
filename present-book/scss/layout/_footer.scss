@@ -1,0 +1,81 @@
+#footer {
+	@extend %clearfix;
+	position: relative;
+	z-index: 50;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	color: $white;
+	text-align: center;
+	@include media('>=tablet') {
+		text-align: left;
+	}
+	&.container {
+		max-width: 1010px;
+	}
+	&:before {
+		@include absolute(0, -9999px, -9999px, 0);
+		background: $green;
+		content: "";
+		z-index: -1;
+	}
+	.copyright {
+		@include font(12, 16, $semibold);
+		display: block;
+		margin: 0 0 10px;
+		@include media('>=tablet') {
+			float: left;
+			max-width: 50%;
+			margin: 0;
+			padding: 11px 10px 5px 0;
+		}
+		@include media('>=desktop') {
+			@include fontsize(14, 18);
+			padding-left: 10px;
+		}
+		a {
+			@include link-color($white);
+			text-decoration: none;
+		}
+	}
+	.social-networks {
+		@extend %clearfix;
+		letter-spacing: -.32em;
+		margin: 0 -5px;
+		overflow: hidden;
+		@include media('>=tablet') {
+			float: right;
+			max-width: 50%;
+			margin: 0 -12px;
+			padding: 0 0 0 10px;
+		}
+		li {
+			@include inline;
+			padding: 2px 5px;
+			letter-spacing: 0;
+			margin: 0;
+			@include media('>=tablet') {
+				padding: 2px 12px;
+			}
+			&:before {
+				display: none;
+			}
+			a {
+				@include fontsize(0, 0);
+				@include link-color($white);
+				display: block;
+				text-decoration: none;
+				&.icon-twitter:before {
+					@include media('>=tablet') {
+						@include fontsize(31, 31);
+					}
+				}
+				&:before {
+					@include fontsize(20, 20);
+					@include media('>=tablet') {
+						@include fontsize(30, 30);
+					}
+				}
+			}
+		}
+	}
+}
