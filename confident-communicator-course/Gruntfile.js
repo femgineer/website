@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         options: {
           map: true,
           processors: [
-            require('autoprefixer-core')({browsers: ['last 4 version', 'Android 4']})
+            require('autoprefixer')({browsers: ['last 4 version', 'Android 4']})
           ]
         },
         src: ['<%= config.cssDir %>*.css',
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
         options: {
           map: false,
           processors: [
-            require('autoprefixer-core')({browsers: ['last 4 version', 'Android 4']})
+            require('autoprefixer')({browsers: ['last 4 version', 'Android 4']})
           ]
         },
         src: ['<%= config.cssDir %>*.css',
@@ -79,10 +79,9 @@ module.exports = function(grunt) {
 
     //sass
     sass: {
-      options: PathConfig.hasBower,
       dev: {
         options: {
-          sourceMap: true,
+          sourcemap: true,
           style: 'nested'
         },
         files: [
@@ -98,7 +97,7 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          sourceMap: false,
+          sourcemap: false,
           style: 'nested'
         },
         files: [
@@ -114,8 +113,8 @@ module.exports = function(grunt) {
       },
       min: {
         options: {
-          sourceMap: false,
-          outputStyle: 'compressed'
+          sourcemap: false,
+          style: 'compressed'
         },
         files: [
           {
