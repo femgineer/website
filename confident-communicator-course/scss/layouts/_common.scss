@@ -1391,7 +1391,7 @@
   z-index: 1;
 
   @include media('>=desktop') {
-    padding: 93px 0 0;
+    padding: 20px 0 0;
     height: 537px;
   }
 
@@ -3588,7 +3588,7 @@
   }
 }
 
-&.nav-active {
+.nav-active {
   .sub-nav-opener{
     &:before{
       transform: rotate(45deg);

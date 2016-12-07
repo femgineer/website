@@ -53,3 +53,40 @@ input[type='submit'] {
   cursor: pointer;
 }
 
+#mc_embed_signup {
+  background:#fff;
+  clear:left;
+  width:100%;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  label {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  input.email {
+    width: 50%;
+  }
+
+  .button {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: normal;
+    background-color: #7c4e8c;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #mc_embed_signup {
+    input.email {
+        width: 100%;
+      }
+    .button {
+      width: 100%;
+    }
+  }
+}
