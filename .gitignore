@@ -28,3 +28,7 @@ vendor/
 
 # Vagrant
 .vagrant/
+Homestead.yaml
+Vagrantfile
+composer.json
+composer.lock
