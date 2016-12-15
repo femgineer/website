@@ -4,6 +4,7 @@
 $rule_types = apply_filters('acf/location/rule_types', array(
 	__("Post",'acf') => array(
 		'post_type'		=>	__("Post Type",'acf'),
+		'post_template'	=>	__("Post Template",'acf'),
 		'post_status'	=>	__("Post Status",'acf'),
 		'post_format'	=>	__("Post Format",'acf'),
 		'post_category'	=>	__("Post Category",'acf'),
@@ -29,6 +30,14 @@ $rule_types = apply_filters('acf/location/rule_types', array(
 		'widget'		=>	__("Widget",'acf')
 	)
 ));
+
+
+// WP < 4.7
+if( acf_version_compare('wp', '<', '4.7') ) {
+	
+	unset( $rule_types[ __("Post",'acf') ]['post_template'] );
+	
+}
 
 $rule_operators = apply_filters( 'acf/location/rule_operators', array(
 	'=='	=>	__("is equal to",'acf'),
@@ -119,7 +128,7 @@ $rule_operators = apply_filters( 'acf/location/rule_operators', array(
 									
 								?></td>
 								<td class="add">
-									<a href="#" class="acf-button add-location-rule"><?php _e("and",'acf'); ?></a>
+									<a href="#" class="button add-location-rule"><?php _e("and",'acf'); ?></a>
 								</td>
 								<td class="remove">
 									<a href="#" class="acf-icon -minus remove-location-rule"></a>
@@ -134,7 +143,7 @@ $rule_operators = apply_filters( 'acf/location/rule_operators', array(
 			
 			<h4><?php _e("or",'acf'); ?></h4>
 			
-			<a href="#" class="acf-button add-location-group"><?php _e("Add rule group",'acf'); ?></a>
+			<a href="#" class="button add-location-group"><?php _e("Add rule group",'acf'); ?></a>
 			
 		</div>
 	</div>
