@@ -5,7 +5,7 @@ Author URI: http://apasionados.es/
 Tags: custom, admin, customize, logo, login
 Requires at least: 3.0.1
 Tested up to: 4.6.1
-Stable tag: 3.3
+Stable tag: 3.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,9 @@ Of course we do. That's why we created it. ;-)
 
 == Changelog ==
 
+= 3.3.1 =
+* Code improvement.
+
 = 3.3 =
 * Solved Warning: call_user_func_array() expects parameter 1 to be a valid callback, function ‘cli_show_server_hostname’
 
@@ -133,8 +136,8 @@ Of course we do. That's why we created it. ;-)
 
 == Upgrade Notice ==
 
-= 3.3 =
-Solved Warning: call_user_func_array() expects parameter 1 to be a valid callback, function ‘cli_show_server_hostname’
+= 3.3.1 =
+Code improvement.
 
 == Contact ==
 

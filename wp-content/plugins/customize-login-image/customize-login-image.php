@@ -3,8 +3,8 @@
  Plugin Name: Customize Login Image
  Plugin URI: http://apasionados.es/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wpcustomizeloginimageplugin 
  Description: This plugin allows you to customize the image and the appearance of the WordPress Login Screen.
- Version: 3.3
- Author: Apasionados, Apasionados del Marketing, Nunsys
+ Version: 3.3.1
+ Author: Apasionados, Apasionados del Marketing
  Author URI: http://apasionados.es
 
  Release notes: 2.0 release.
@@ -72,7 +72,7 @@ function ad_login_footer() {
 	if ($server_ip_address == "") { // Added for IP Address in IIS
 		$server_ip_address = (!empty($_SERVER[ 'LOCAL_ADDR' ]) ? $_SERVER[ 'LOCAL_ADDR' ] : "");
 	}
-	if ( ( get_option( 'cli_show_server_ip' ) === 'show') || ( get_option( 'cli_show_server_hostname' ) === 'show') )  {
+	if ( ( get_option( 'cli_show_server_ip' ) === 'show') && ( get_option( 'cli_show_server_hostname' ) === 'show') )  {
 		echo ('<p style="width: 320px; margin:auto; padding: 20px 0 20px 0; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13); box-shadow: 0 1px 3px rgba(0,0,0,.13); text-align: center; color:#008EC2">' . esc_html__( 'SERVER IP:', 'customize-login-image' ) . ' <strong>' . $server_ip_address . '</strong><br />' . esc_html__( 'HOST NAME:', 'customize-login-image' ) . ' <strong>' . gethostname() . '</strong></p>');
 	} elseif ( get_option( 'cli_show_server_ip' ) === 'show' ) {
 		echo ('<p style="width: 320px; margin:auto; padding: 20px 0 20px 0; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13); box-shadow: 0 1px 3px rgba(0,0,0,.13); text-align: center; color:#008EC2">' . esc_html__( 'SERVER IP:', 'customize-login-image' ) . ' <strong>' . $server_ip_address . '</strong></p>');	
